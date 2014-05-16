@@ -239,12 +239,12 @@ a:hover {
 #about {
 	/*width: 65%;*/
 	/*background-color: #DDD;*/
+	margin-top: 100px;
 	border-top:1px solid #AAA;
-
 }
 
 #about p {
-	font-size: 8pt;
+	font-size: 9pt;
 
 }
 
