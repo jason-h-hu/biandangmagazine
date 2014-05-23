@@ -1,8 +1,17 @@
 $(document).ready(function() {
 
-	$(".gallery .thumbnails a").click(function() {
-		setImage($(this))
+	console.log("?!")
+	$.getJSON("../img/images.json", function(data){
+		console.log("??")
+		$.each(data, function(key, val){
+  			renderThumbnail(val);
+  		});
+  		$(".gallery .thumbnails a").click(function() {
+			setImage($(this))
+		});
+		setImage($(".gallery .thumbnails a"));
 	});
+	
 
 	$(".icon").hover(
 		function(){
@@ -20,17 +29,22 @@ $(document).ready(function() {
 			$(this).attr("src", fileName)
 		}
 	);
-
-	$(".icon").click(function(){ console.log("HIII"); });
-
 });
 
 function setImage(thumbnail){
 	var path = thumbnail.attr("rel");
+	var caption = thumbnail.attr("caption")
 	$(".gallery .image").fadeOut('fast');
 	window.setTimeout(function(){ 
 		$(".gallery .image").attr("src", path);
 	},200)
 	$(".gallery .image").fadeIn('fast');
-
+	$(".caption").html(caption);
 }
+
+function renderThumbnail(metadata){
+	var path = "../img/references/" + metadata.path;
+	var caption = metadata.caption;
+	var thumbnail = $(".thumbnails").append("<li><a href=\"#\" rel=\"" + path + "\" caption=\"" + caption + "\"onclick=\"return false;\"><div class=\"thumbnail\" style=\"background-image:url('" + path + "');\"></div></a></li>");
+}
+

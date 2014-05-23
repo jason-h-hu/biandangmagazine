@@ -71,11 +71,19 @@ a:hover {
 }
 
 .gallery .image {
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+	width: auto;
 /*	max-height: 472px;
 	max-width: 840px;
 	height: auto;
 	width: auto;*/
+}
 
+.gallery .caption {
+	padding: 2%;
+	width: 96%;
 }
 
 .gallery .thumbnails{
@@ -90,6 +98,7 @@ a:hover {
 	float: left;
 	padding: 2%;
 	padding-left: 0px;
+	padding-bottom: 0px;
 	width: 100px;
 	height: 100px;
 }
@@ -114,7 +123,7 @@ a:hover {
 }
 
 @media (min-width: 0px){
-	.toppanel img {
+	.toppanel .gallery {
 		width: 95%;
 	}
 	.videoframe iframe {
@@ -147,7 +156,7 @@ a:hover {
 
 }
 @media (min-width: 480px){
-	.toppanel img {
+	.toppanel .gallery {
 		width: 90%;
 	}
 
@@ -177,7 +186,7 @@ a:hover {
 	}
 }
 @media (min-width: 760px){
-	.toppanel img {
+	.toppanel .gallery {
 		width: 85%;
 	}
 	.videoframe iframe {
@@ -210,7 +219,7 @@ a:hover {
 	}
 }
 @media (min-width: 1020px){
-	.toppanel img {
+	.toppanel .gallery {
 		width: 70%;
 	}
 	.videoframe iframe {

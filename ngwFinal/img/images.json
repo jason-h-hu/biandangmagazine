@@ -1,0 +1,58 @@
+[
+	{
+		"path":"1.JPG", 
+		"caption":"Our first prototype was rigged in a few hours, and we navigated the interior of the ID Building."
+	},
+	{
+		"path":"2.JPG", 
+		"caption":"We initially observed a detachment from our bodies, detatchment from social cues, and difficulty with staircases."
+	},
+	{
+		"path":"3.JPG", 
+		"caption":"We also tried experimenting with steroscopic vision, but that proved technically difficult during our early prototypes."
+	},
+	{
+		"path":"4.JPG", 
+		"caption":"After third person views, we tried playing with second person views, in reference to side-scrolling video games."
+	},
+	{
+		"path":"5.JPG", 
+		"caption":"We noticed depth perception was remarkably difficult."
+	},
+	{
+		"path":"6.svg", 
+		"caption":"We initially wanted to use the prototype to explore immersive cinematic experiences. This pulled from trends in augmented reality and interactive storytelling."
+	},
+	{
+		"path":"7.svg", 
+		"caption":"Something particularly uncanny was we were able to see other faces while hugging a friend."
+	},
+	{
+		"path":"8.svg", 
+		"caption":"We came up with two metaphors: 1. The individual as a self-driving car, aka being your own algorithm."
+	},
+	{
+		"path":"9.svg", 
+		"caption":"2. Observing oneself from the third person. This tapped into ideas of transcendental meditation that later shaped our work."
+	},
+	{
+		"path":"10.JPG", 
+		"caption":"Testing with other people refined the prototype"
+	},
+	{
+		"path":"11.JPG", 
+		"caption":"We used the library to test cinematic framings. Views from above, side, behind, etc. as if in a film."
+	},
+	{
+		"path":"12.JPG", 
+		"caption":"Navigating when viewed from far above proved the easiest. When the shot was facing you, navigating was hardest--one expected it to behave like a mirror."
+	},
+	{
+		"path":"13.PNG", 
+		"caption":"The later addition of a fish-eye lens helped with perspective. "
+	},
+	{
+		"path":"14.jpg", 
+		"caption":"We made cleaned-up cardboard prototypes for our final iteration. "
+	}
+]
