@@ -1,8 +1,6 @@
 $(document).ready(function() {
 
-	console.log("?!")
 	$.getJSON("../img/images.json", function(data){
-		console.log("??")
 		$.each(data, function(key, val){
   			renderThumbnail(val);
   		});

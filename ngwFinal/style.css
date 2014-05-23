@@ -30,7 +30,8 @@ a {
 }
 
 a:visited{
-	color: #f84951;
+	color: #
+	;
 }
 
 a:hover {
@@ -63,6 +64,11 @@ a:hover {
 .toppanel .videoframe {
 	width: 840px;
 	padding: 0;
+}
+
+.toppanel img {
+	width: 100%;
+	height: auto;
 }
 
 .caption {
@@ -127,7 +133,7 @@ a:hover {
 		width: 95%;
 	}
 	.videoframe iframe {
-		width: 318;
+		width: 318px;
 		height: 177px;
 	}
 
