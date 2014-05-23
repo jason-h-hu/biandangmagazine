@@ -8,8 +8,21 @@ body {
 	margin-left: 5%;
 }
 
-p {
+h3 {
+	font-size: 24pt;
+}
+h4 {
+	font-size: 14pt;
+}
+h5 {
+	font-size: 12pt;
+}
+h6 {
 	font-size: 10pt;
+}
+
+p {
+	font-size: 12pt;
 }
 
 a {
@@ -53,7 +66,8 @@ a:hover {
 }
 
 .caption {
-	padding-top: 10px;
+	padding-top: 20px;
+	width: 80%;
 }
 
 .gallery .image {
@@ -119,7 +133,7 @@ a:hover {
 	}
 	.panel img {
 		float: none;
-		width: 100%;
+		width: 90%;
 		height: auto;
 	}
 
@@ -142,7 +156,7 @@ a:hover {
 		height: 354px;
 	}
 	.panel {
-		width: 90%;
+		width: 100%;
 	}
 	.panel .text{
 		padding: 2%;
@@ -151,7 +165,7 @@ a:hover {
 	}
 	.panel img {
 		float: none;
-		width: 80%;
+		width: 90%;
 	}
 
 	.panel .column {
@@ -171,17 +185,17 @@ a:hover {
 		height: 425px;
 	}
 	.panel {
-		width: 85%;
+		width: 90%;
 	}	
 	.panel .text{
 		float: left;
-		width: 51%;
+		width: 46%;
 		padding-top: 0;
 		padding-bottom: 0;
 	}
 	.panel img {
 		float: left;
-		width: 41%;
+		width: 46%;
 	}
 	.panel .column {
 		width: 30%;
@@ -204,15 +218,15 @@ a:hover {
 		height: 472px;
 	}
 	.panel {
-		width: 70%;
+		width: 80%;
 	}	
 	.panel .text{
 		float: left;
-		width: 56%;
+		width: 51%;
 	}
 	.panel img {
 		float: left;
-		width: 36%;
+		width: 41%;
 	}
 }
 
@@ -254,7 +268,7 @@ a:hover {
 }
 
 #about p {
-	font-size: 9pt;
+	font-size: 10pt;
 
 }
 
