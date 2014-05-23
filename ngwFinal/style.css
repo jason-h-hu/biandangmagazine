@@ -52,6 +52,10 @@ a:hover {
 	padding: 0;
 }
 
+.caption {
+	padding-top: 10px;
+}
+
 .gallery .image {
 /*	max-height: 472px;
 	max-width: 840px;
@@ -94,6 +98,7 @@ a:hover {
 	padding: 2%;
 	float: left;
 }
+
 @media (min-width: 0px){
 	.toppanel img {
 		width: 95%;
@@ -107,6 +112,17 @@ a:hover {
 		width: 100%;
 		float: left;
 	}
+
+	.panel .text{
+		padding: 2%;
+		padding-left: 0;
+	}
+	.panel img {
+		float: none;
+		width: 100%;
+		height: auto;
+	}
+
 	#about {
 		width: 90%;
 	}
@@ -129,13 +145,13 @@ a:hover {
 		width: 90%;
 	}
 	.panel .text{
+		padding: 2%;
 		float: none;
 		width: 90%;
-		padding-bottom: 0;
 	}
 	.panel img {
 		float: none;
-		width: 90%;
+		width: 80%;
 	}
 
 	.panel .column {
@@ -159,12 +175,13 @@ a:hover {
 	}	
 	.panel .text{
 		float: left;
-		width: 46%;
+		width: 51%;
 		padding-top: 0;
+		padding-bottom: 0;
 	}
 	.panel img {
 		float: left;
-		width: 46%;
+		width: 41%;
 	}
 	.panel .column {
 		width: 30%;
@@ -201,13 +218,6 @@ a:hover {
 
 .panel .header {
 	text-decoration: none;
-}
-
-
-.panel .text{
-	/*float: left;*/
-	padding: 2%;
-	/*padding-top: 0;*/
 }
 
 .panel img {
