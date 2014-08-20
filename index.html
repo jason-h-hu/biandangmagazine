@@ -3,22 +3,23 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<!-- <div class="banner-background" style="background-image: url('img/filler1.jpg');">
+	<div class="banner-background landing-page" style="background-image: url('img/filler1.jpg');">
 		<div class="form-group">
 			<div class="input-group-lg" style = "width: 40%; margin-left: 30%; margin-top: 200px; ">
 				<input type="text" class="form-control banner-signup" id="password" placeholder="Password?">
 			</div>
 		</div>		
-	</div> -->
+	</div>
 
-	<div class="banner-background landing-page" style="background-image: url('img/filler1.jpg');" >
+<!-- 	<div class="banner-background landing-page" style="background-image: url('img/filler1.jpg');" >
 		<h3>the</h3>
 		<h1>Secret Bakery</h1>
 		<div class="form-group" style = "width: 30%; margin-left: 35%; padding-top: 20px; ">
 			<input type="text" class="form-control my-banner" id="banner-signup" style="" placeholder="Sign up with @brown.edu or @risd.edu">
 		</div>
-	</div>
-	<div class="banner-background description-page">
+	</div> -->
+	<div class="main"></div>
+<!-- 	<div class="banner-background description-page">
 		<div class="banner-monogram" style="background-image: url('img/monogram.svg')">
 			<div class="about">
 				<h3>What is Secret Bakery?</h3>
@@ -46,29 +47,51 @@
 				</span>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/backbone/backbone.js"></script>
+	<script type="text/javascript" src="js/backbone-min.js"></script>
 	<script type="text/javascript">
-		var checkEmail = function(string){
-			splitString = string.split("@")
-			if (splitString.length == 2){
-				if (splitString[1] == "brown.edu" || splitString[1] == "risd.edu"){
-					return true;
-				}
-			}
-			return false;
-		}
-		$('#banner-signup').submit( function() { return false; } );
-		$('#banner-signup').keypress(function(event) {
+
+		$("#password").keypress(function(event) {
 			if (event.keyCode == 13) {
-				var email = $(this)[0].value
-				if (checkEmail(email)){
-					$(".form-group").addClass("has-success")
-					$(this).addClass("banner-signup-success")
-					alert("Awesome! We'll let you know about our next event.")
+				var password = $(this)[0].value
+				if (password == "speakeasy"){
+					$('<div class="iviewer_image_mask" style="background: url(http://somesite.com/path/to/image.jpg);"></div>').appendTo(this.container);
+
+
+					$(".landing-page").html("")
+					$("<h3>the</h3><h1>Secret Bakery</h1><div class='form-group' style = 'width: 30%; margin-left: 35%; padding-top: 20px; '><input type='text' class='form-control my-banner' id='banner-signup' placeholder='Sign up with @brown.edu or @risd.edu'></div>").appendTo($(".landing-page"))
+
+					$(".main").html("")
+
+					$("<div class='banner-background description-page'><div class='banner-monogram' style='background-image: url('img/monogram.svg')'><div class='about'><h3>What is Secret Bakery?</h3><p>Once a month, a house on College Hill will be filled for a night with cakes, pastries, cocktails, and good company. Now returning for its 3rd year, Secret Bakery is opening its doors once again to hungry students looking for an evening bite and drink.</p><p>Here's how it works:</p><ol><li>Sign up with your email in the form above. A week before each month's bakery, we'll let you know what's being served and where.</li><li>If anything catches your eye, RSVP with your food and drink request.</li><li>On the day of the pop up, show up with a small amount to help cover costs--the amount will be listed, and will probably be no more than $5.</li><li>Eat. Drink. Be merry. There'll be plenty of refills.</li></ol><p>Invite friends; pass the word. We don't mind being <em>that</em> secret. </p><p style='padding-left: 80%'>Love,</p><p style='padding-left: 80%'><em>K. &amp J.</em></p></div></div></div><div class='banner-background forms-page' style='background-image: url('img/filler.png');'><div class='forms'> <h3 style='color:#FFF'>Remove my email, please</h3><div class='input-group'><input type='text' class='form-control my-banner' placeholder='no-fun@brown.edu'><span class='input-group-btn'><button class='btn btn-default' type='button'>We'll miss you!</button></span></div></div></div>").appendTo($(".main"))
+					$(".banner-monogram").css('background-image', " url('img/monogram.svg')")
+					$(".forms-page").css('background-image', "url('img/filler.png')")
+					$('#banner-signup').submit( function() { return false; } );
+					$('#banner-signup').keypress(function(event) {
+						if (event.keyCode == 13) {
+							var email = $(this)[0].value
+
+							if (checkEmail(email)){
+								$(".form-group").addClass("has-success")
+								$(this).addClass("banner-signup-success")
+								alert("Awesome! We'll let you know about our next event.")
+							}
+							else{
+								$(this).addClass("banner-signup-error")
+								$(".form-group").addClass("has-error")
+								alert("Sorry, that's not a Brown or RISD email address.")
+							}
+						}
+						else{
+							$(this).removeClass("banner-signup-error")
+							$(this).removeClass("banner-signup-success")
+							$(".form-group").removeClass("has-error")	
+							$(".form-group").removeClass("has-success")			
+						}
+					});
 				}
 				else{
 					$(this).addClass("banner-signup-error")
@@ -83,5 +106,15 @@
 				$(".form-group").removeClass("has-success")			
 			}
 		});
+		var checkEmail = function(string){
+			splitString = string.split("@")
+			if (splitString.length == 2){
+				if (splitString[1] == "brown.edu" || splitString[1] == "risd.edu"){
+					return true;
+				}
+			}
+			return false;
+		}
+
 	 </script>
 </body>
