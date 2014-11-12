@@ -1,6 +1,26 @@
 <head>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
-	<h3>Doodle Jump?</h3>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			for (var i = 0; i < 1000; i++){
+				$("body").append("<div></div>")
+			}
+			randomPalate();
+			// setInterval(function(){
+				
+			// }, 100);
+		})
+
+		var randomPalate = function(){
+			$("div").each(function(){
+				var hue = Math.round(Math.random()*888888);
+				var color = "#" + (""+hue);
+				$(this).css("background-color", color);						
+			});
+		}
+	</script>
 </body>
