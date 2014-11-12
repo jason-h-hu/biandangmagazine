@@ -8,10 +8,10 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			var hue = 0;
-			while (true){
+			setInterval(function(){
 				$("div").css("background", hue);
 				hue ++;
-			}
+			}, 1000);
 		})
 	</script>
 </body>
