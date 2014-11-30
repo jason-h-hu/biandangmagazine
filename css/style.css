@@ -4,11 +4,12 @@ body, div, p, img, ul, li{
 	margin: 0;
 }
 
-h1, h2, h3, h4 {
-	font-family: "HelveticaNeue-CondensedBold", Helvetica Neue;
+h1, h2, h3, h4, li {
+	font-family: "HelveticaNeue-CondensedBold", Helvetica Neue, Helvetica, Arial;
 }
 p {
 	font-size: 14pt;
+	padding-bottom: 20px;
 }
 
 a {
