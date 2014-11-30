@@ -54,7 +54,6 @@ var cycleImage = function(){
 			index = i
 		}
 	});	
-	// index = index + 1;
 	index = (index + 1) % $(".navigatorButton").length;
 	var imageName = $(".navigatorButton").eq(index).attr("id");
 	setImage(imageName);
