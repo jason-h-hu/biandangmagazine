@@ -19,6 +19,7 @@
 	width: 200px;
 	float: left;
 	margin: 15px;
+	margin-right: 75px;
 	margin-left: 0;
 	padding: 0;
 }
@@ -30,4 +31,9 @@
 	height: 50%;
 	margin: 0;
 	padding: 0;
+}
+
+.bio .postImageFrame img {
+    border-radius: 100px;
+    border-color: #111;
 }
