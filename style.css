@@ -59,13 +59,17 @@ body {
 	left: -40px;
 	padding: 10px;
 }
+
 .definition p {
 	font-style: italic;
 	font-size: 18pt;
 }
+
 h3, h4, h5 {
 	/*font-family: courier; */
 }
+
+
 
 .btn-primary {
 	background-color: #17282A;
@@ -74,6 +78,17 @@ h3, h4, h5 {
 }
 
 
+.thumbnails .btn-default {
+	background-color: #889496;
+}
+
+.thumbnails .btn-default:hover {
+	background-color: #2980b9;
+}
+.thumbnails .btn img{
+	height: 50px;
+	max-width: 50px;
+}
 
 .axis path, .axis line {
   fill: none;
@@ -116,8 +131,8 @@ h3, h4, h5 {
 }
 
 .navbar-brand img {
-	width: 45px;
+	width: 250px;
 	padding: 0;
 	position: absolute;
-	top: 1px;
+	top: 5px;
 }
