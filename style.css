@@ -1,6 +1,5 @@
 body {
-	font-family: Avenir next;
-	/*font-weight: bold;*/
+	font-family: Avenir next, Helvetica, Arial, sans-serif;
 }
 
 .content {
@@ -17,9 +16,15 @@ body {
 	/*min-height: 100%;*/
 }
 
+.myFooter {
+	height: 100px;
+	background-color: #889496;
+}
+
 .myContainer {
 	min-height: 100%;
 	min-width: 500px;
+	padding-bottom: 50px;
 }
 
 #landingPage {
@@ -108,4 +113,11 @@ h3, h4, h5 {
 }
 .counters span{
 	color: #e74c3c;
+}
+
+.navbar-brand img {
+	width: 45px;
+	padding: 0;
+	position: absolute;
+	top: 1px;
 }
