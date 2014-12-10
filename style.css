@@ -19,6 +19,12 @@ body {
 .myFooter {
 	height: 100px;
 	background-color: #889496;
+	text-align: center;
+	color: white;
+	font-weight: lighter;
+}
+.myFooter h4 {
+	padding-top: 30px;
 }
 
 .myContainer {
@@ -56,13 +62,19 @@ body {
 
 .definition {
 	position: relative;
-	left: -40px;
-	padding: 10px;
+	width: 200%;
+	left: 0px;
+	padding: 20px;
+	background-color: #889496;
+	/*color: white;*/
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 .definition p {
 	font-style: italic;
-	font-size: 18pt;
+	font-size: 14pt;
+	width: 500px;
 }
 
 h3, h4, h5 {
