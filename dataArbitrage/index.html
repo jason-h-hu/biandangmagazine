@@ -1,112 +1,193 @@
 <head>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/navbar.css"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script src="graph.js" charset="utf-8"></script>
+	<script src="counter.js" charset="utf-8"></script>
 </head>
-
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top navbar-custom ">
+<div id="fb-root"></div>
 
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#"><img src="img/name-1.png" class="img-responsive"></a>
-		</div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 
-		<div class="container-fluid navbar-right">
+	<nav class="navbar navbar-fixed-top navbar-inverse myNavbar" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><img src="img/icons/snake.svg"></a>
+			</div>
+
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li><a href="#about">About</a></li>
-					<li><a href="#team">The Team</a></li>
-					<li><a href="#contact">Contact</a></li>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#aboutUs">About Us</a></li>
+					<li><a href="#howItWorks">How it Works</a></li>
+					<li><a href="#contactUs">Costntact Us</a></li>
+					<li><a href="/legal.html">Legal</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
-	<div class="jumbotron stretch-background" style="background-image: url('img/pvdbackground.jpg');">
-		<div class="container-fluid page" id-"landing">
-			<div class="container-fluid landing">
-				<img src="img/icon-1.png" class="img-responsive center-block" alt="Responsive image">
-				<img src="img/name-1.png" class="img-responsive center-block">
-				<h3>Coming soon to the App Store</h3>
+	<div class="container-fluid myHeader" id="landingPage">
+		<div class="container-fluid myJumbotron">
+			<div class="container-fluid col-md-10 col-md-offset-1">
+				<div class="embed-responsive embed-responsive-16by9" >
+					<iframe src="//player.vimeo.com/video/113540308?autoplay=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="container-fluid col-md-8 col-md-offset-2">
+				<h4>Share On:</h4>
+				<a class="btn btn-primary btn-lg" href="https://twitter.com/share" role="button">
+					<img src="img/icons/twitter.svg" style="height: 25px;"> Twitter
+				</a>
+				<a class="btn btn-primary  btn-lg" href="http://www.tumblr.com/share" role="button">
+					<img src="img/icons/tumblr.svg" style="height: 25px;"> Tumblr
+				</a>
+				<a class="btn btn-primary  btn-lg" hdata-href="/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true" role="button">
+					<img src="img/icons/fb.svg" style="height: 25px;"> Facebook
+				</a>		
 			</div>
 		</div>
 	</div>
+	<div class="container-fluid myContainer" id="aboutUs">
+		<div class="container-fluid col-md-8 col-md-offset-2 content">
+			<div class="container-fluid page-header ">
+				<h2>About Us</h2>
+			</div>
+			<div class="container-fluid">
+				<p>DataArbitrage is a program that generates money by selling our personal data, then uses that money to purchase fake social media accounts. DataArbitrage then takes the data from the fake social media accounts and automatically sells it.  This new money goes right back into buying new social media accounts!  DataArbitrage will keep on functioning until the value of useful data will be completely diluted because of such an abundance of fake social media data.</p>
+			</div>
+			<div class="definition col-md-12">
+				<h3>ar&#149;bi&#149;trage</h3>
+				<h4>\'&auml;r-b&#601;-,tr&auml;szh\</h4>
+				<p>business : the practice of buying something (such as foreign money, gold, etc.) in one place and selling it almost immediately in another place where it is worth more.</p>
+			</div>
+			<div class="container-fluid">
+				<p>Big data is currently one of the fastest-growing and most lucrative industries in the world. Data brokers in the US alone account for a $15 billion industry, all of which rests on the harvesting, analysis, and exploitation of your personal information from platforms across the web. Data brokers know where you live, what you earn, what you like and what you buy--then they use this information for their own benefit, all without your consent or knowledge. </p>
+				<p>However, the system is changing. There is currently a growing number of services that let you reclaim partial control of your data, allowing you to aggregate and sell your personal data from across social media platforms as a packet. Access to this data is purchased from you at a weekly rate, then sold to brands, retailers, media agencies, and banks in order to create a more comprehensive set of data profiles. In choosing to sell their personal data, consumers are effectively reclaiming a profit from something that is always already being taken from them.</p>
+				<p>The user is now able to connect their social media information with their purchasing data, providing advertisers with a much more comprehensive understanding of their interests and spending habits.  We recognize the value in creating a more transparent and open economy. However, we see this new data-aggregation system as another step forward in a large-scale attempt to normalize the invasive realities of big data. By cashing in on their data as a commodity, consumers are surrendering as complicit in a system that seeks only to profit from details about their private lives. In doing so, we are letting the realities of big data go unquestioned, positioning the act of harvesting our information as natural and normal. </p>
+				<p>We see this developing economy as a space for economic possibility and mischief. We earn cash by selling our personal data, then use that money to purchase more social media accounts in large quantities--the data from which we immediately re-sell. In doing so, we expand our presence on the web and our own ability to influence the data pool, utilizing a fundamental flaw in the current data aggregation system: the incredible ease with which one can generate fake profiles and, subsequently, data.  For only a few dollars, it is possible to purchase hundreds of fake social media accounts. And with a weekly payment of $1-2 per account from third-party data brokers, that's a significant profit with which to buy more fake accounts. </p>
+				<p>Ultimately, we hope to create an ever-expanding infinite loop of arbitrage, with the end goal of using fake accounts to eventually dilute the entire pool of big data.  </p>
 
-	<div class="container-fluid page" id="about">
-		<div class="col-md-offset-2 col-md-8">
-			<h2>How does it work?</h2>
-			
-			<img src="http://blogs.sas.com/content/sastraining/files/2013/04/infographic_template.png" class="img-responsive">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis nunc vehicula, finibus sapien at, congue sem. Proin et ante non justo imperdiet pharetra vitae id dolor. Phasellus facilisis metus quis magna sollicitudin euismod. Pellentesque placerat sollicitudin porttitor. </p>
+			</div>
+			<div class="container-fluid">
+				<h3>mission</h3>
+			</div>
+			<div class="container-fluid">
+				<p>We built DataArbitrage within a larger lineage of digital autocannibalism, alongside projects such as <a href="http://www.gwei.org/">Google Will Eat Itself</a>. Like GWEI, DataAbitrage seeks to deconstruct a system of corporate interest and greed by creating a self-destructive loop in which the system, in its continuous search for profit, feeds on and eventually destroys itself.</p>
+				<p>Right now, the data industry functions opaquely. We all know that it exists, and we recognize, panoptically, that our presence on social media or online shopping platforms means that our information always has the potential to be surveilled, harvested, analyzed, and used to manipulate our individual web experiences to be as profitable as possible. However, as consumers, we never really see these processes at work: the data brokerage industry, by and large, acts as an invisible middleman between our socially mediated selves and the companies that use those platforms to surround us with personalized advertisements. </p>
+			</div>
 		</div>
 	</div>
+	<div class="container-fluid myContainer" id="howItWorks">
+		<div class="container-fluid  col-md-8 col-md-offset-2">
+			<div class="container-fluid page-header">
+				<h2>How It Works</h2>
+			</div>
+			<div class="container-fluid">
+				<p>There is currently a growing startup economy of services that aggregate and sell your personal data from across social media platforms. Access to this data is purchased from you at a weekly rate, then sold to brands, retailers, media agencies, and banks. In choosing to sell his or her personal data, the consumer</p>
+				<p>We built DataArbitrage within a lineage of digital autocannibalism, alongside projects such as <a href="http://www.gwei.org/">Google Will Eat Itself</a>. Like GWEI, DataAbitrage seeks to deconstruct a </p>
+			</div>
+			<div class="container-fluid">
+				<h3>Breaking the Economics of Data</h3>
+				<p>Through DataArbitrage, we can undermine the value of data, until it becomes to uncertain and to costly for companies to collect and understand. When the cost to collect a terabyte of data surpasses its value, then the data economy will stop running.</p>
+				<p>Our analysts have project 2064 as the year we can break the data economy.</p>
+				<br>
+				<div class="counters">
+					<h3>MONEY GENERATED: <span id="money">1000</span></h3>
+					<p>By participating in a number of data markets, we've managed to "create" value. </p>
+					<h3>NUMBER OF ARBITRAGEURS: <span id="arbitrageurs">1000</span></h3>
+					<p>We have managed to recruit a small cohort of accounts to participate in DataArbitrage. Are some of them fake? Probably.</p>
+				</div>
+				<br>
+				<h4>Figure 1. Projected <span id="price">Value</span> and <span id="cogs">Cost</span> of one Terabyte of Data</h4>
+				<div class="imageFrame">
+					<svg></svg>
+				</div>
+			</div>
 
-	<div class="container-fluid page inverted" id="team">
-		<div class="col-md-offset-2 col-md-8">
-			<h2>Meet the team</h2>
-			<div class="col-md-4 profile">
-				<img src="http://thefoodinnovationnexus.org/commun/img/about/team-warshay-danny.jpg" class="img-responsive img-circle">
-				<h3>Name McName</h3>
-				<h4>Position</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis nunc vehicula, finibus sapien at, congue sem. Proin et ante non justo imperdiet pharetra vitae id dolor. Phasellus facilisis metus quis magna sollicitudin euismod. Pellentesque placerat sollicitudin porttitor. </p>
-			</div>
-			<div class="col-md-4 profile">
-				<img src="http://thefoodinnovationnexus.org/commun/img/about/team-warshay-danny.jpg" class="img-responsive img-circle">
-				<h3>Name McName</h3>
-				<h4>Position</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis nunc vehicula, finibus sapien at, congue sem. Proin et ante non justo imperdiet pharetra vitae id dolor. Phasellus facilisis metus quis magna sollicitudin euismod. Pellentesque placerat sollicitudin porttitor. </p>
-			</div>
-			<div class="col-md-4 profile">
-				<img src="http://thefoodinnovationnexus.org/commun/img/about/team-warshay-danny.jpg" class="img-responsive img-circle">
-				<h3>Name McName</h3>
-				<h4>Position</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis nunc vehicula, finibus sapien at, congue sem. Proin et ante non justo imperdiet pharetra vitae id dolor. Phasellus facilisis metus quis magna sollicitudin euismod. Pellentesque placerat sollicitudin porttitor. </p>
-			</div>
+			<div class="container-fluid">
+				<h3>How do I fit in?</h3>
+				<h4>Adopt an ArbiBot</h4>
+				<p>In order to create fake data, we need fake accounts. Current fake profiles will create lots of noise, but because they're mass produced copies of each other, tech companies are getting smarter and smarter at weeding them out.</p>
+				<p>We need something a bit more real.</p>
+				<p>Our engineers are developing the Data Arbitrage Bot, or ArbiBot, for short. Using state-of-the-art research in artificial intelligence, ArbiBots live on your computer and fake social media interaction by posting, liking, and tweeting.</p>
+				<br>
+				<br>
+				<br>
+				<div class="imageFrame">
+					<img src="img/arbibot.svg">
+				</div>
+				<br>
+				<br>
+				<br>
+				<p>But unlike bots today, ArbiBots will learn how to fake being human over time. By watching your interactions online, it'll grow and develop a personality over time. As the ArbiBots social network grows over time, they'll become smarter and harder to distinguish from real users, polluting the value of real data. </p>
+				<a class="btn btn-lg btn-primary btn-block" href="" role="button" disabled="disabled">DOWNLOAD AVAILABLE SOON
+				</a>
 
+			</div>
 		</div>
 	</div>
-
-	<div class="container-fluid page" id="contact">
-		<div class="col-md-offset-2 col-md-8">
+	<div class="container-fluid myContainer col-md-8 col-md-offset-2" id="contactUs">
+		<div class="container-fluid page-header">
 			<h2>Contact Us</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis nunc vehicula, finibus sapien at, congue sem. Proin et ante non justo imperdiet pharetra vitae id dolor. </p>
-			<br>
-			<br>
-			<div class="container-fluid">
-				<div class="col-sm-2"><a href=""><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png" class="img-responsive"></a></div>
-				<div class="col-sm-2"><a href=""><img src="https://g.twimg.com/Twitter_logo_blue.png" class="img-responsive"></a></div>
-				<div class="col-sm-2"><a href=""><img src="http://princessclub.info/images/insta_logo.png" class="img-responsive"></a></div>
-			</div>
-			<br>
-			<br>
-
-			<div class="container-fluid">
-				<h3>Mailing List</h3>
-				<form>
-					<div class="form-group">
-						<div class="col-sm-10">
-							<input type="email" class="form-control" id="inputEmail3" placeholder="john@ripple.com">
-							<br>
-						</div>
-						<div class="col-sm-2">
-							<button type="submit" class="btn btn-default">Keep Me Updated!</button>
-						</div>
-					</div>
-				</form>
-			</div>
-
-
 		</div>
+
+		<div class="container-fluid">
+			<h3>twitter: <a href="https://www.twitter.com/dataarbitrage">@dataarbitrage</a></h3>
+			<h3>email: <a href="mailto:data.arbitrage@gmail.com">data.arbitrage@gmail.com</a></h3>
+		</div>
+
+			<div class="col-md-12 container-fluid">
+			<h3>team</h3>
+			<h4>We're a small team with a big vision.</h4>
+			<p>We the creators of DataArbitrage, seek to find holes in the data economy, then use those holes to restructure the ways in which corporations are using and exploiting your personal information.</p>
+
+			</div>
+			<div class="col-md-4 container-fluid">
+				<div class="imageFrame">
+					<img src="img/prof3.jpg">
+				</div>
+				<h4>Frieda Tabot</h4>
+				<h5>CEO</h5>
+				<p>Frieda spends most of her time trying to make a lot of money. Prior to DataArbitrage, she founded three failed startups and a granola manufacturing company, which quickly tanked. When she's not busy with DataArbitrage, Frieda enjoys bowling, that's it. </p>
+			</div>
+			<div class="col-md-4 container-fluid">
+				<div class="imageFrame">
+					<img src="img/prof1.jpg">
+				</div>
+				<h4>Nikolas Smith Adams</h4>
+				<h5>Chief Designer</h5>
+				<p>Nikolas spends most of his time feeling very scared and sad. He seeks to create innovative design solutions to combat the all-consuming horror and dread instilled in him by the current internet landscape. He also enjoys hanging out with his seven dogs, although real, unmediated, face-to-face human connection would be nice too. </p>
+			</div>
+			<div class="col-md-4 container-fluid">
+				<div class="imageFrame">
+					<img src="img/prof2.jpg">
+				</div>
+				<h4>Filipe McCloud</h4>
+				<h5>Chief Technical Officer</h5>
+				<p>Filipe co-founded both Apple and Amazon, although he's been written out of both corporations' histories, following a series of scandalous incidents involving iPhone footage of Tim Cook and Nikolas's seven dogs. Now a self-described techno-anarchist, he also ghost-wrote Dave Eggers' acclaimed 2013 technodystopian novel, The Circle. He is a passionate chef and an avid birdwatcher.</p>
+			</div>
+	</div>
+	<div class="container-fluid col-md-12 myFooter">
+		<H4>Copyright Data Arbitrage 2014</H4>
 	</div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>	<script type="text/javascript" src="js/app.js"></script>
+
 </body>
