@@ -56,5 +56,8 @@ p {
 }
 .inverted p{
 	color: #bee5f9;
+}
 
+#contact {
+	padding-top: 200px;
 }
