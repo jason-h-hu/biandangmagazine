@@ -43,7 +43,7 @@ p {
 }
 
 .inverted {
-	background-color: #0077b3;
+	background-color: #333;
 	color: white;
 }
 
@@ -60,4 +60,25 @@ p {
 
 #contact {
 	padding-top: 200px;
+}
+
+.myInput {
+	/*border:2px;*/
+	border-color: rgba(255,255,255,0.75); 
+	border-radius: 0px;
+	background-color: rgba(255,255,255,0.75);
+	color: black;
+	font-size: 24pt;
+	height: 48pt;
+}
+
+.mySubmit {
+	background-color: rgba(52, 152, 219, 0.75);
+	border-color: rgba(52, 152, 219, 1.0); 
+	font-size: 18pt;
+	height: 54pt;
+	border-radius: 24pt;
+	padding: 12pt;
+	padding-left: 18pt;
+	padding-right: 18pt;
 }
