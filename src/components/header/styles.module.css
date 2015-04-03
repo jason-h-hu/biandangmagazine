@@ -1,0 +1,75 @@
+@import "../../css/typography.css";
+@import "../../css/colors.css";
+
+.header {
+  padding: 0px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) { 
+  .header { margin-left: 10px; margin-right: 10px; margin-top: 15px; }
+}
+@media (min-width: 768px) { 
+  .header { margin: 30px; }
+}
+
+@media (min-width: 768px) { 
+  .small-logo-button { display: none; }
+  .xsmall-logo-button { display: none; }
+}
+@media (max-width: 768px) and (min-width: 576px) { 
+  .medium-logo-button { display: none; }
+  .xsmall-logo-button { display: none; }
+}
+@media (max-width: 576px) { 
+  .medium-logo-button { display: none; }
+  .small-logo-button { display: none; }
+}
+
+.hamburger-button {
+  border-width: 0px !important;
+  padding-right: 0px !important;
+}
+
+@media (min-width: 576px) { 
+  .buttons {  position: absolute; top: 30px;  right: 0px; }
+}
+@media (max-width: 768px) and (min-width: 576px) { 
+  .buttons {  position: absolute; top: 20px;  right: 0px; }
+}
+
+
+.button {
+  text-align: right;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (max-width: 576px) { 
+  .button { 
+    display: relative; 
+    padding-right: 0px;
+  }
+}
+@media (min-width: 576px) { 
+  .button { 
+    display: inline; 
+  }
+  .button:last-child { 
+    padding-right: 0px; 
+  }
+}
+
+.link {
+  color: var(--color-text-dark-dark);
+  font-weight: bold;
+  font-family: var(--font-serif);
+}
+
+.link-dm {
+  color: var(--color-memories);
+  font-weight: bold;
+  font-family: var(--font-serif);
+}
+
+@media (max-width: 576px) { .link { font-size: 16px; }}
+@media (min-width: 576px) { .link { font-size: 18px; }}

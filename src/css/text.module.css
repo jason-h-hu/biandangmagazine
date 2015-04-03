@@ -1,0 +1,93 @@
+@import "./typography.css";
+@import "./colors.css";
+
+.header-lg {
+  font-family: var(--font-serif);
+  color: var(--color-text-dark-dark);
+}
+@media (max-width: 576px) { .header-lg { font-size: 24pt; line-height: 22pt; }}
+@media (min-width: 576px) { .header-lg { font-size: 28pt; line-height: 24pt; }}
+@media (min-width: 768px) { .header-lg { font-size: 36pt; line-height: 36pt; }}
+
+.header-md {
+  font-family: var(--font-sans-serif);
+  font-style: italic;
+  color: var(--color-text-dark-medium);
+}
+@media (max-width: 576px) { .header-md { font-size: 13pt; }}
+@media (min-width: 576px) { .header-md { font-size: 14pt; }}
+@media (min-width: 768px) { .header-md { font-size: 16pt; }}
+
+.header-sm {
+  font-family: var(--font-sans-serif);
+  font-weight: bold;
+  color: var(--color-text-dark-dark);
+}
+@media (max-width: 576px) { .header-sm { font-size: 12pt; }}
+@media (min-width: 576px) { .header-sm { font-size: 12pt; }}
+@media (min-width: 768px) { .header-sm { font-size: 14pt; }}
+
+.header-xs {
+  font-family: var(--font-sans-serif);
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--color-text-dark-dark);
+}
+@media (max-width: 576px) {.header-xs {font-size: 11pt; }}
+@media (min-width: 576px) {.header-xs {font-size: 11pt; }}
+@media (min-width: 768px) {.header-xs {font-size: 12pt; }}
+
+.body-text {
+  font-family: var(--font-sans-serif);
+  font-size: 14pt;
+  color: var(--color-text-dark-dark);
+}
+
+a.body-text {
+  color: var(--test-101);
+}
+
+.poetry-text {
+  font-family: var(--font-sans-serif);
+  font-size: 14pt;
+  line-height: 24pt;
+  /* We're not specifying the color for poetry text 
+   * because we're hardcoding it to dark mode. This is a hack.
+   * It makes me feel sad*/
+   /* color: var(--color-text-dark-dark); */
+}
+
+.dark-mode-color {
+  /* This pains me. We're a dark mode. We ought 
+   * to have a global var for dark mode, and each 
+   * component should know how to render itself in 
+   * dark/light mode */
+  color: var(--color-memories); 
+  text-shadow: 1px 1px 5px black;
+}
+
+.caption-text {
+  font-family: var(--font-sans-serif);
+  font-size: 12pt;
+  line-height: 14pt;
+  color: var(--color-text-dark-medium);
+}
+
+.label-text {
+  font-family: var(--font-sans-serif);
+  font-size: 14pt;
+  text-transform: uppercase;
+}
+
+.ingredient-list-text {
+  font-family: var(--font-sans-serif);
+  font-size: 14pt;
+  line-height: 16pt;
+  color: var(--color-text-dark-dark);
+}
+
+.footnote-text {
+  font-family: var(--font-sans-serif);
+  font-size: 12pt;
+  color: var(--color-text-dark-medium);
+}

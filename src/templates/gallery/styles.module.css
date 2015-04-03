@@ -1,0 +1,26 @@
+.header {
+  padding-bottom: 60px;
+}
+
+.description {
+  padding-bottom: 60px;
+}
+
+.caption {
+  padding-top: 10px;
+  text-align: left;
+}
+
+.image-wrapper {
+  padding: 0px;
+  padding-bottom: 60px;
+  display: inline-block;
+  border-style: none !important;
+  outline: none !important;
+  background: none;
+}
+
+.image-wrapper:focus {
+  border-style: none !important;
+  outline: none !important;
+}

@@ -1,0 +1,15 @@
+@import "../../css/colors.css";
+
+.home-list {
+  padding: 0px;
+  margin: 0px;
+}
+
+.article-wrapper {
+  display: inline-block;
+  padding-bottom: 30px;
+}
+
+.article-wrapper:hover > div > div {
+  color: var(--color-101) !important;
+}

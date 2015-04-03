@@ -1,0 +1,75 @@
+.header {
+  padding-bottom: 40px;
+}
+
+.attributes {
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.ingredients {
+  padding-bottom: 20px;
+}
+
+.ingredients-section {
+  padding-bottom: 10px;
+}
+
+.ingredients-list {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.ingredients-list > li{
+  padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .ingredient-quantity {
+    display: inline;
+  }
+
+  .ingredient-name-and-modifier {
+    display: inline;
+  }
+}
+
+@media (min-width: 768px) {
+  .ingredient-quantity {
+    width: 40px;
+    margin-left: -40px;
+    padding-right: 5px;
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .ingredient-name-and-modifier {
+    display: inline-block;
+  }
+  
+}
+
+.step {
+  padding-bottom: 20px;
+}
+
+.step-note {
+  padding-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .step-note-number {
+    display: inline;
+  }
+}
+
+@media (min-width: 768px) {
+  .step-note-number {
+    display: inline-block;
+    width: 20px;
+    margin-left: -20px;
+    padding-right: 5px;
+  }
+}

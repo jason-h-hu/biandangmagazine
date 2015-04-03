@@ -1,0 +1,23 @@
+@import "../css/colors.css";
+
+html, body {
+  background-color: var(--color-memories);
+  height: 100%;
+}
+
+a {
+  color: var(--color-101);
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: var(--color-101) !important;
+}
+
+a:active {
+  color: var(--color-101-faded-1) !important;
+}
+
+:target {
+  background-color: var(--color-golden-carbs-faded) !important; /* pale goldenrod */
+}
