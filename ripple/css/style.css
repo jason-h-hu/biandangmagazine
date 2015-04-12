@@ -19,6 +19,10 @@ p {
 	text-align: center;
 }
 
+.landing a {
+	/*font-size: 48pt;*/
+}
+
 .landing img {
 	min-width: 220px;
 	width: 50%;
