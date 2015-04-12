@@ -19,8 +19,12 @@
 
 	<div class="container-fluid page stretch-background inverted" id="contact" style="background-image: url('img/waves.gif');">
 		<div class="col-md-offset-2 col-md-8">
+			<script type="text/javascript">var submitted=false;</script>
+			<iframe name="hidden_iframe" id="hidden_iframe"
+			style="display:none;" onload="if(submitted)
+			{ console.log('hello'); window.location='thankyou.html'; }"></iframe>
+			<form action="https://docs.google.com/a/brown.edu/forms/d/1boGaq-aeXE-XvYM2gp5Lx2uu2J_dOKY7rGA3ZjHsJ7Y/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;">
 
-			<form action="https://docs.google.com/a/brown.edu/forms/d/1boGaq-aeXE-XvYM2gp5Lx2uu2J_dOKY7rGA3ZjHsJ7Y/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
 				<ol role="list" class="ss-question-list" style="padding-left: 0">
 					<div class="ss-form-question errorbox-good" role="listitem">
 						<div dir="ltr" class="ss-item  ss-text">
@@ -29,7 +33,7 @@
 									<h1>make waves with us</h1>
 									<div class="ss-q-help ss-secondary-text " dir="ltr"></div>
 								</label>
-								<input type="text" name="entry.1013775622" value="" class="form-control myInput" id="entry_1013775622" dir="auto" aria-label="make waves with us  " title="">
+								<input type="text" name="entry.1013775622" value="jordan@ripple.com" class="form-control myInput" id="entry_1013775622" dir="auto" aria-label="make waves with us " title="">
 								<br>
 								<div class="error-message" id="1101891865_errorMessage">
 								</div>
@@ -46,7 +50,7 @@
 							<tbody>
 								<tr>
 									<td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
-										<input type="submit" name="submit" value="join waitlist" id="ss-submit" class="btn btn-primary mySubmit">
+										<input type="submit" name="submit" value="join email list" id="ss-submit" class="btn btn-primary mySubmit">
 									</td>
 								</tr>
 							</tbody>
