@@ -1,0 +1,21 @@
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.notes {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.ingredients-list {
+  list-style: none;
+  padding-left: 0px;
+  margin-left: -40px;
+}
+
+.ingredient-quantity {
+  width: 40px;
+  text-align: right;
+  display: inline-block
+}

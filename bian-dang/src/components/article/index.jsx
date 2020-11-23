@@ -1,31 +1,25 @@
-import { graphql } from "gatsby";
 import React from 'react';
-import {Helmet} from 'react-helmet';
+import {Container, Row, Col} from 'react-bootstrap'
 
-import Layout from '../layout';
+import styles from './styles.module.css';
 
-export default function Article({data}) {
-  const post = data.markdownRemark
+export default function Article({title, author, children}) {
   return (
-    <Layout>
-      <Helmet><title>{post.frontmatter.title}</title></Helmet>
-      <div>
-        <h1>{post.frontmatter.title}</h1>
-        <h4>by {post.frontmatter.author}</h4>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
-    </Layout>
+    <Col 
+      className={styles.article}
+      lg={{span: 6, offset: 3}}  
+      md={{span: 8, offset: 2}}  
+      xs={{span: 10, offset: 1}}
+    >
+      <Row className={styles.header}>
+        <Col xs="12" className={styles.title}>{title}</Col>
+        <Col xs="12" className={styles.byLine}>by {author}</Col>
+      </Row>
+      <Row className={styles.body}>
+        <Col xs="12">{children}</Col>
+      </Row>
+    </Col>
   );
 }
 
-export const query = graphql`
-  query($path: String!) {
-    markdownRemark(fields: { path: { eq: $path } }) {
-      html
-      frontmatter {
-        title
-        author
-      }
-    }
-  }
-`
+

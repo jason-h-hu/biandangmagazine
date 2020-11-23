@@ -1,0 +1,31 @@
+.recipe {
+  max-width: 750px;
+  margin: auto;
+}
+
+.header {
+  padding-bottom: 20px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.translation {
+  font-size: 32px;
+}
+
+.attributes {
+  font-size: 12px; 
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.by-line {
+  font-size: 16px;
+  font-style: italic;
+  padding-bottom: 20px;
+}

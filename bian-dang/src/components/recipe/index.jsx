@@ -1,40 +1,49 @@
-import { graphql } from "gatsby";
 import React from 'react';
-import {Helmet} from 'react-helmet';
+import {Container, Row, Col} from 'react-bootstrap'
 
-import Layout from '../layout';
+import RecipeIngredients from '../recipe_ingredients';
+import RecipeSteps from '../recipe_steps';
 
-export default function Article({data}) {
-  const post = data.markdownRemark
+import styles from './styles.module.css';
+
+export default function Recipe({
+  title, 
+  translation,
+  author, 
+  yieldAmount, 
+  prepTime,
+  ingredientSections,
+  steps
+}) {
   return (
-    <Layout>
-      <Helmet><title>{post.frontmatter.title}</title></Helmet>
-      <div>
-        <h1>Recipe: {post.frontmatter.title}</h1>
-        <h4>by {post.frontmatter.author}</h4>
-
-        <h5>Yield: {post.frontmatter.yield}</h5>
-        <h5>Estimated Time: {post.frontmatter.time.active} active, {post.frontmatter.time.passive} passive</h5>
-
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
-    </Layout>
+    <Col 
+      className={styles.recipe}
+      lg={{span: 6, offset: 3}}  
+      md={{span: 8, offset: 2}}  
+      xs={{span: 12, offset: 0}}
+    >
+      <Row className={styles.header}>
+        <Col xs="12" className={styles.title}>{title} {translation == null ? null : <span className={styles.translation}>({translation})</span>}</Col>
+        <Col xs="12" className={styles.byLine}>by {author}</Col>
+        <Col xs="12" className={styles.attributes}>
+          <div>Yield: {yieldAmount}</div>
+          <div>Time: {prepTime}</div>
+        </Col>
+      </Row>
+      <Row className={styles.body}>
+        {
+          ingredientSections.map(({sectionTitle, ingredients, notes}) => 
+            <RecipeIngredients 
+              sectionTitle={sectionTitle}
+              ingredients={ingredients}
+              notes={notes}
+            />
+          )
+        }
+      </Row>
+      <RecipeSteps steps={steps} />
+    </Col>
   );
 }
 
-export const query = graphql`
-  query($path: String!) {
-    markdownRemark(fields: { path: { eq: $path } }) {
-      html
-      frontmatter {
-        title
-        author
-        yield
-        time {
-          active
-          passive
-        }
-      }
-    }
-  }
-`
+
