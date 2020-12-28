@@ -1,12 +1,11 @@
 import React from 'react';
-import {Container, Row, Col} from 'react-bootstrap'
 
-import Layout from '../../components/layout';
-import Article from '../../components/article';
+import Page from '../../components/page';
+import Article from '../../components/content/article';
 
 export default function Bing() {
   return (
-    <Layout title="Bing">
+    <Page title="Bing"  nextPost='/bing_recipe' previousPost='/bao' volume="/">
       <Article title="Bing" author="Jason Hu">
         <p>
           Around the corner from my grandmother’s place in Taipei is a typical breakfast joint. Open for just the morning, it serves up standard fare like fresh soy milk with youtiao. It is fast and cheap for the busy commuter. There are hundreds of Taiwanese breakfast places like it scattered throughout the capital, with even more food carts parked in alleyways and corners, all ready to feed the waking city. Every time I visit, I always order a <em>hujiao bing</em>: a leavened roll, layered with green onion and black pepper. It’s greasy, crispy, and soft—the perfect vehicle for a fried egg.
@@ -24,6 +23,6 @@ export default function Bing() {
           Memories, after all, aren’t photographic recollection, but rather constant creation. For my bing, this would be especially literal. If I couldn’t find a recipe, I would have to create one myself out of the proximal examples. In a video touring a Taipei diner, an old shopkeeper pulls the dough in a long coil, shaping the laminations of spice and onion. On one blog, a recipe for da bing adds rice flour to the dough, to lend chewiness without toughness. On another, a recipe for <em>cong juan</em> brushed the top with simple syrup, to carmelize into a golden brown while baking. The midpoint between all of these yielded something new—an imperfect recreation of the bing at the corner of Nanshan Road—but also something warm, peppery, and familiar.        
         </p>
       </Article>
-    </Layout>
+    </Page>
   );
 }

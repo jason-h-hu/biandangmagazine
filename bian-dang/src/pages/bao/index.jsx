@@ -1,12 +1,11 @@
 import React from 'react';
-import {Container, Row, Col} from 'react-bootstrap'
 
-import Layout from '../../components/layout';
-import Article from '../../components/article';
+import Page from '../../components/page';
+import Article from '../../components/content/article';
 
 export default function Bao() {
   return (
-    <Layout title="Bao">
+    <Page title="Bao" nextPost='/bing' previousPost='/ceramics' volume="/">
       <Article title="Bao" author="Carolyn Huang">
         <p>
           Nestled in a brimming platter<br/>
@@ -27,7 +26,7 @@ export default function Bao() {
           一口充滿愛<br/>
         </p>
       </Article>
-    </Layout>
+    </Page>
 
   );
 }
