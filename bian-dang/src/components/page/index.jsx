@@ -2,9 +2,9 @@ import React from 'react';
 import {Container, Col} from 'react-bootstrap'
 import {Helmet} from 'react-helmet';
 
-import Header from '../elements/header';
-import Footer from '../elements/footer';
-import NavigationButtons from '../elements/navigation_buttons';
+import Header from '../header';
+import Footer from '../footer';
+import NavigationButtons from '../navigation_buttons';
 import styles from './styles.module.css';
 
 export default function Page({title, children, nextPost, previousPost, volume}) {
