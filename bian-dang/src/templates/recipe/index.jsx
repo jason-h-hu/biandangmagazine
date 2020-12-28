@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styles from './styles.module.css';
-import textStyles from '../../text.module.css';
+import textStyles from '../../components/text.module.css';
 
 export default function Recipe({
   title, 
@@ -17,7 +17,7 @@ export default function Recipe({
     <div>
       <div className={styles.header}>
         <div className={textStyles.headerLg}>{title} <span className={textStyles.headerMd}>{translation == null ? null : `(${translation})`}</span></div>
-        <div className={textStyles.byLine}>by {author}</div>
+        <div className={textStyles.headerMd}>by {author}</div>
         <div className={styles.attributes}>
           <div className={textStyles.labelText}>Yield: {yieldAmount}</div>
           <div className={textStyles.labelText}>Time: {prepTime}</div>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Page from '../../components/page';
-import Recipe from '../../components/content/recipe';
+import Recipe from '../../templates/recipe';
 
 export default function Bing() {
   return (
@@ -53,8 +53,8 @@ export default function Bing() {
             name: 'Make the dough',
             description: (
               <div>
-                <div>Combine the slurry with the other ingredients, and then knead the dough by hand for roughly 10-15 minutes, until the dough is very smooth and stretchy. Place the dough inside a lightly oiled work-bowl, large enough to accommodate a doubling in size.</div>
-                <div>Cover and seal the bowl with plastic wrap, and leave at room temperature to rise for four hours, or in the fridge overnight. If you’re in a rush, the dough can be set in a very warm spot to complete the rise in as little as an hour and a half.</div>
+                <p>Combine the slurry with the other ingredients, and then knead the dough by hand for roughly 10-15 minutes, until the dough is very smooth and stretchy. Place the dough inside a lightly oiled work-bowl, large enough to accommodate a doubling in size.</p>
+                <p>Cover and seal the bowl with plastic wrap, and leave at room temperature to rise for four hours, or in the fridge overnight. If you’re in a rush, the dough can be set in a very warm spot to complete the rise in as little as an hour and a half.</p>
               </div>                
             ),
             note: 'While it’s tempting to skip the manual work and use a no-knead approach, it’s important that the dough is bouncy and stretchy before we start the rise. As the yeasts start producing carbon dioxide, we need a well-developed gluten matrix to trap and isolate the gases. Otherwise, the bubbles aggregate together, resulting in cavernous, airy interiors more akin to a baguette or focaccia.',
@@ -63,8 +63,8 @@ export default function Bing() {
             name: 'Roll out the dough',
             description: (
               <div>
-                <div>The dough is ready once it has doubled in size. Punch it down to deflate, and then turn it out onto a lightly floured surface. To prepare it for rolling, we need to form the dough into a rough rectangular shape: Flatten it by hand, tri-fold the dough horizontally like a letter, flatten it again, and then finish by tri-folding the dough vertically.</div>
-                <div>You’re now ready to roll out the dough: With a large rolling pin, roll the dough to 8” by 24”. The exact measurements don’t matter since the dough will continue to be shaped and stretched  later—just try to keep it a rough rectangle.</div>
+                <p>The dough is ready once it has doubled in size. Punch it down to deflate, and then turn it out onto a lightly floured surface. To prepare it for rolling, we need to form the dough into a rough rectangular shape: Flatten it by hand, tri-fold the dough horizontally like a letter, flatten it again, and then finish by tri-folding the dough vertically.</p>
+                <p>You’re now ready to roll out the dough: With a large rolling pin, roll the dough to 8” by 24”. The exact measurements don’t matter since the dough will continue to be shaped and stretched  later—just try to keep it a rough rectangle.</p>
               </div>
             ),
             note: 'When I first started baking, I was confused by why we deflated the dough—didn’t we just spend all this time getting it to rise? This came from a misunderstanding about the purpose of yeast: Strictly speaking, they aren’t here to directly provide the volume, but rather speckle the dough with billions of microscopic bubbles. In the oven, the sudden vaporization of water and alcohol inflates these bubbles like a balloon, and it’s this steam that provides the volume and lift for the final baked good. Controlling the distribution and size of these bubbles is how we control the final texture. Deflating and folding the dough prevents any uneven gas distribution from fermentation.',
@@ -81,8 +81,8 @@ export default function Bing() {
             name: 'Finishing touches',
             description: (
               <div>
-                <div>Flatten the rolls to be 4” wide and ½” thick: This will define the final dimensions of the bing. Brush the top with the simple syrup, then sprinkle with the sesame seeds. Gently press the seed in with your fingers. Finally, brush on another coat of melted shortening. </div>
-                <div>Let the dough rest for 15 minutes before portioning. Trim the two ends if they’re irregular, and then cut the dough into 3” wide bing. Set them on a greased sheet pan with the edges barely touching each other.</div>
+                <p>Flatten the rolls to be 4” wide and ½” thick: This will define the final dimensions of the bing. Brush the top with the simple syrup, then sprinkle with the sesame seeds. Gently press the seed in with your fingers. Finally, brush on another coat of melted shortening. </p>
+                <p>Let the dough rest for 15 minutes before portioning. Trim the two ends if they’re irregular, and then cut the dough into 3” wide bing. Set them on a greased sheet pan with the edges barely touching each other.</p>
               </div>
             ),
           },
@@ -90,8 +90,8 @@ export default function Bing() {
             name: 'Baking',
             description: (
               <div>
-                <div>Bake in a 425°F oven on the top shelf for 12 minutes. Remove from the oven, and brush the top of the bing with another coat of melted shortening. Return the tray to the oven on the broil setting for 8 minutes, until it has developed a deep, golden color.</div>
-                <div>Let it cool for 10-30 minutes before eating.</div>
+                <p>Bake in a 425°F oven on the top shelf for 12 minutes. Remove from the oven, and brush the top of the bing with another coat of melted shortening. Return the tray to the oven on the broil setting for 8 minutes, until it has developed a deep, golden color.</p>
+                <p>Let it cool for 10-30 minutes before eating.</p>
               </div>
             ),
             note: 'Keep a close eye on its progress since every broiler is different. If it seems like it’s taking on too much color, drop the temperature back to 425°F, and finish in the oven such that it’s had a total cook time of 20 minutes.',

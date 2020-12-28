@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Page from '../../components/page';
-import Gallery from '../../components/content/gallery';
+import Gallery from '../../templates/gallery';
 
 export default function Boba() {
   return (

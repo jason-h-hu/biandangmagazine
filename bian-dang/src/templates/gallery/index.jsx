@@ -1,7 +1,7 @@
 import React from 'react';
 import {Image} from 'react-bootstrap'
 
-import textStyles from '../../text.module.css';
+import textStyles from '../../components/text.module.css';
 import styles from './styles.module.css';
 
 export default function Gallery({title, description, author, images}) {
@@ -9,7 +9,7 @@ export default function Gallery({title, description, author, images}) {
     <div>
       <div className={styles.header}>
         {title == null ? null : <div className={textStyles.headerLg}>{title}</div>}
-        {author == null ? null : <div className={textStyles.byLine}>by {author}</div>}
+        {author == null ? null : <div className={textStyles.headerMd}>by {author}</div>}
       </div>
       <div className={styles.description}>        
         {description == null ? null : <div className={textStyles.bodyText}>{description}</div>}

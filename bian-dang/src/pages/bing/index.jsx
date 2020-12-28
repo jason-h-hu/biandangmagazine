@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Page from '../../components/page';
-import Article from '../../components/content/article';
+import Article from '../../templates/article';
 
 export default function Bing() {
   return (

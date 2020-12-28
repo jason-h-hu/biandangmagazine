@@ -14,8 +14,6 @@ export default function Bing() {
       <br/>
       <div className={textStyles.headerXs}>Header Xs</div>
       <br/>
-      <div className={textStyles.byLine}>by This Is A ByLine</div>
-      <br/>
       <div className={textStyles.bodyText}>This is body text with a variety of styles like <em>italicized text that looks like this</em> or <b>bolded text that looks like this</b> or even <a href="/">a hypertext within the body which looks like this</a></div>
       <br/>
       <div className={textStyles.poetryText}>This might demonstrate</div>

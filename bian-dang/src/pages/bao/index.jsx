@@ -1,12 +1,12 @@
 import React from 'react';
 
 import Page from '../../components/page';
-import Article from '../../components/content/article';
+import Poem from '../../templates/poem';
 
 export default function Bao() {
   return (
     <Page title="Bao" nextPost='/bing' previousPost='/ceramics' volume="/">
-      <Article title="Bao" author="Carolyn Huang">
+      <Poem title="Bao" author="Carolyn Huang">
         <p>
           Nestled in a brimming platter<br/>
           Swaddled in curling steam<br/>
@@ -25,7 +25,7 @@ export default function Bao() {
           Fluffy dumpling bundles<br/>
           一口充滿愛<br/>
         </p>
-      </Article>
+      </Poem>
     </Page>
 
   );
