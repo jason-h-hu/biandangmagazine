@@ -1,0 +1,19 @@
+html {
+  background-color: #999; /* light gray */
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #006ac1 !important; /* subway blue */
+}
+
+a:active {
+  color: #308dd9 !important; /* subway blue (light) */
+}
+
+:target {
+  background-color: #ffdc68 !important; /* pale goldenrod */
+}

@@ -1,0 +1,23 @@
+.next-button {
+  text-align: right;
+}
+
+.home-button {
+  text-align: center;
+}
+
+.previous-button {
+  text-align: left;
+}
+
+.navigation-buttons {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.navigation-button {
+  color: #444; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-style: italic;
+}

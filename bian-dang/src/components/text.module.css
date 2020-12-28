@@ -1,0 +1,153 @@
+@media (max-width: 576px) {
+  .header-lg {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    line-height: 20pt;
+    color: #333;
+  }
+  
+  .header-md {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .header-sm {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .header-xs {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .by-line {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    color: #888;
+    font-style: italic;
+  }
+}
+
+@media (min-width: 576px) {
+  .header-lg {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24pt;
+    line-height: 20pt;
+    color: #333;
+  }
+  
+  .header-md {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .header-sm {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .header-xs {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .by-line {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    color: #888;
+    font-style: italic;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-lg {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36pt;
+    line-height: 36pt;
+    color: #333;
+  }
+  
+  .header-md {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18pt;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .header-sm {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .header-xs {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .by-line {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    color: #888;
+    font-style: italic;
+  }
+}
+
+.body-text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 12pt;
+  color: #444;
+}
+
+.poetry-text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14pt;
+  line-height: 24pt;
+  color: #444;
+}
+
+.caption-text {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  color: #666;
+  font-style: italic;
+}
+
+.label-text {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.ingredient-list-text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 12pt;
+  line-height: 14pt;
+  color: #444;
+}
+
+.footnote-text {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+  color: #666;
+}

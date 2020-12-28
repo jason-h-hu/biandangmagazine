@@ -1,0 +1,49 @@
+.home {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+/* .home:hover {
+  color: #ffb700; 
+}
+
+.home:active {
+  color: #DAA520; 
+} */
+
+.header {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.collapsed-button {
+  opacity: 0.5;
+  border-width: 0px !important;
+}
+
+.collapsed-button:hover {
+  opacity: 1;
+}
+
+.collapsed-button:focus {
+  outline: none;
+}
+
+.buttons {
+  text-align: right;
+}
+
+.button {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.link {
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Helvetica, Arial, sans-serif;
+}
