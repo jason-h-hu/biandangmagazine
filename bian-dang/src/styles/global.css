@@ -2,6 +2,11 @@
 
 html {
   background-color: var(--color-memories);
+  height: 100%;
+}
+
+html, body, #gatsby-focus-wrapper, #___gatsby {
+  height: 100%;
 }
 
 a:hover {

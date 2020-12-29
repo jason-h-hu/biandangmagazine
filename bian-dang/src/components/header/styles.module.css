@@ -16,6 +16,7 @@
 .collapsed-button {
   opacity: 0.5;
   border-width: 0px !important;
+  padding-right: 0px;
 }
 
 .collapsed-button:hover {

@@ -2,6 +2,7 @@
 
 .container {
   background-color: var(--color-memories);
+  height: 100%;
 }
 
 .page {
