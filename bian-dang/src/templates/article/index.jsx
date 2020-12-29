@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styles from './styles.module.css';
-import textStyles from '../../components/text.module.css';
+import textStyles from '../../css/text.module.css';
 
 export default function Article({title, author, children}) {
   return (

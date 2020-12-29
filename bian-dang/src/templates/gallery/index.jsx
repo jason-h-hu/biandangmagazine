@@ -1,7 +1,7 @@
 import React from 'react';
 import {Image} from 'react-bootstrap'
 
-import textStyles from '../../components/text.module.css';
+import textStyles from '../../css/text.module.css';
 import styles from './styles.module.css';
 
 export default function Gallery({title, description, author, images}) {

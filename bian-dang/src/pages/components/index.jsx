@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Page from '../../components/page';
-import textStyles from '../../components/text.module.css';
+import textStyles from '../../css/text.module.css';
 
 export default function Bing() {
   return (

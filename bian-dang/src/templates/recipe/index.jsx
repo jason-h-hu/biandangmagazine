@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styles from './styles.module.css';
-import textStyles from '../../components/text.module.css';
+import textStyles from '../../css/text.module.css';
 
 export default function Recipe({
   title, 
@@ -19,8 +19,8 @@ export default function Recipe({
         <div className={textStyles.headerLg}>{title} <span className={textStyles.headerMd}>{translation == null ? null : `(${translation})`}</span></div>
         <div className={textStyles.headerMd}>by {author}</div>
         <div className={styles.attributes}>
-          <div className={textStyles.labelText}>Yield: {yieldAmount}</div>
-          <div className={textStyles.labelText}>Time: {prepTime}</div>
+          <div className={textStyles.headerXs}>Yield: {yieldAmount}</div>
+          <div className={textStyles.headerXs}>Time: {prepTime}</div>
         </div>
       </div>
       <div className={styles.ingredients}>
@@ -29,12 +29,12 @@ export default function Recipe({
             {
               if (note != null) notes.push(note);
               return (
-                <div key={sectionTitle}>
+                <div key={sectionTitle} className={styles.ingredientsSection}>
                   {
                     sectionTitle == null 
                       ? null 
                       : <div className={textStyles.headerSm}>
-                          {sectionTitle} {note == null ? null : <a className={styles.footnote} href={`#NOTE${notes.length}`}><sup> {notes.length}</sup></a>}
+                          {sectionTitle} {note == null ? null : <a className={textStyles.headerSm} href={`#NOTE${notes.length}`}><sup> {notes.length}</sup></a>}
                         </div>
                   }
                   <ul className={styles.ingredientsList}>
@@ -47,7 +47,7 @@ export default function Recipe({
                             <span className={styles.ingredientQuantity}>{quantity}</span>
                             <span className={styles.ingredientNameAndModifier}>
                               {` ${unit}`} {modifier == null ? `${name} ` : `${name}, ${modifier} `}
-                              {ingredientNote == null ? null : <a className={styles.footnote} href={`#NOTE${notes.length}`}><sup>{notes.length}</sup></a>}
+                              {ingredientNote == null ? null : <a className={textStyles.ingredientListText} href={`#NOTE${notes.length}`}><sup>{notes.length}</sup></a>}
                             </span>
                           </li>                            
                         );
@@ -71,7 +71,7 @@ export default function Recipe({
                     name == null 
                       ? `Step ${i + 1}` 
                       : `Step ${i + 1}. ${name}`
-                  } {note == null ? null : <a className={styles.footnote} href={`#NOTE${notes.length}`}><sup>{notes.length}</sup></a>}
+                  } {note == null ? null : <a className={textStyles.headerSm} href={`#NOTE${notes.length}`}><sup>{notes.length}</sup></a>}
                 </div>
                 <div className={textStyles.bodyText}>{description}</div>
               </div>

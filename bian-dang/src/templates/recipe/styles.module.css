@@ -1,5 +1,5 @@
 .header {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .attributes {
@@ -11,6 +11,10 @@
   padding-bottom: 20px;
 }
 
+.ingredients-section {
+  padding-bottom: 10px;
+}
+
 .ingredients-list {
   list-style: none;
   padding-left: 0px;
@@ -18,10 +22,6 @@
 
 .ingredients-list > li{
   padding-bottom: 10px;
-}
-
-.footnote {
-  color: #444;
 }
 
 @media (max-width: 768px) {

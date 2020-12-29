@@ -1,16 +1,22 @@
+@import '../../css/colors.css';
+@import '../../css/typography.css';
+
 .footer {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #fff;
-  background: #999; /* light grey */
-  margin-left: -15px;
-  margin-right: -15px;
+  background: var(--color-101); 
+  color: var(--color-text-light-light);
+  font-family: var(--font-sans-serif);
+  font-size: 12px;
+  text-transform: uppercase;
+  
+  position: relative;
+  bottom: 0;
+  width: 120%;
+  margin-left: -10%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  color: white;
+  text-align: center;
 }
 
 .copyright {
-  margin: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 12px;
-  text-transform: uppercase;
 }

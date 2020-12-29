@@ -2,7 +2,7 @@ import React from 'react';
 import {Form, Button} from 'react-bootstrap'
 
 import Page from '../../components/page';
-import textStyles from '../../components/text.module.css';
+import textStyles from '../../css/text.module.css';
 import styles from './styles.module.css';
 
 export default function Contact() {

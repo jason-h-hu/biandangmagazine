@@ -1,5 +1,7 @@
+@import "../css/colors.css";
+
 html {
-  background-color: #999; /* light gray */
+  background-color: var(--color-memories);
 }
 
 a:hover {
@@ -7,13 +9,13 @@ a:hover {
 }
 
 a:hover {
-  color: #006ac1 !important; /* subway blue */
+  color: var(--color-101) !important;
 }
 
 a:active {
-  color: #308dd9 !important; /* subway blue (light) */
+  color: var(--color-101-faded-1) !important;
 }
 
 :target {
-  background-color: #ffdc68 !important; /* pale goldenrod */
+  background-color: var(--color-golden-carbs-faded) !important; /* pale goldenrod */
 }

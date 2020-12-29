@@ -1,17 +1,12 @@
+@import "../../css/typography.css";
+@import "../../css/colors.css";
+
 .home {
   font-size: 24px;
   font-weight: bold;
-  font-family: Helvetica, Arial, sans-serif;
-  color: #333;
+  font-family: var(--font-serif);
+  color: var(--color-text-dark-dark);
 }
-
-/* .home:hover {
-  color: #ffb700; 
-}
-
-.home:active {
-  color: #DAA520; 
-} */
 
 .header {
   margin-left: -15px;
@@ -41,9 +36,9 @@
 }
 
 .link {
-  color: #333;
+  color: var(--color-text-dark-dark);
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: var(--font-serif);
 }

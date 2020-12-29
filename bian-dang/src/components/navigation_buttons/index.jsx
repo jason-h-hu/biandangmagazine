@@ -8,7 +8,7 @@ export default function NavigationButtons({next, previous, home}) {
   return (
     <Row className={styles.navigationButtons}>
       <Col xs="4" className={styles.previousButton}>
-        {previous == null ? null : <Link className={styles.navigationButton} to={previous}>{'<'} Previous Post</Link>}
+        {previous == null ? null : <Link className={styles.navigationButton} to={previous}>Previous Post</Link>}
       </Col>
       <Col xs="4" className={styles.homeButton}>
         {home == null ? null : <Link className={styles.navigationButton} to={home}>
@@ -17,7 +17,7 @@ export default function NavigationButtons({next, previous, home}) {
         }
       </Col>
       <Col xs="4" className={styles.nextButton}>
-        {next == null ? null : <Link className={styles.navigationButton} to={next}>Next Post {'>'}</Link>}
+        {next == null ? null : <Link className={styles.navigationButton} to={next}>Next Post</Link>}
       </Col>
     </Row>
   );

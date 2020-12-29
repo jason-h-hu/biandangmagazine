@@ -1,0 +1,121 @@
+@import "./typography.css";
+@import "./colors.css";
+
+.header-lg {
+  font-family: var(--font-serif);
+  color: var(--color-text-dark-dark);
+}
+
+.header-md {
+  font-family: var(--font-sans-serif);
+  font-style: italic;
+  color: var(--color-text-dark-medium);
+}
+
+.header-sm {
+  font-family: var(--font-sans-serif);
+  font-weight: bold;
+  color: var(--color-text-dark-dark);
+}
+
+.header-xs {
+  font-family: var(--font-sans-serif);
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--color-text-dark-dark);
+}
+
+@media (max-width: 576px) {
+  .header-lg {
+    font-size: 20pt;
+    line-height: 20pt;
+  }
+  
+  .header-md {
+    font-size: 13pt;
+  }
+  
+  .header-sm {
+    font-size: 12pt;
+  }
+  
+  .header-xs {
+    font-size: 10pt;
+  }
+}
+
+@media (min-width: 576px) {
+  .header-lg {
+    font-size: 24pt;
+    line-height: 20pt;
+  }
+  
+  .header-md {
+    font-size: 14pt;
+  }
+  
+  .header-sm {
+    font-size: 12pt;
+  }
+  
+  .header-xs {
+    font-size: 10pt;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-lg {
+    font-size: 36pt;
+    line-height: 36pt;
+  }
+  
+  .header-md {
+    font-size: 16pt;
+  }
+  
+  .header-sm {
+    font-size: 14pt;
+  }
+  
+  .header-xs {
+    font-size: 10pt;
+  }
+}
+
+.body-text {
+  font-family: var(--font-sans-serif);
+  font-size: 14pt;
+  color: var(--test-color);
+}
+
+.poetry-text {
+  font-family: var(--font-sans-serif);
+  font-size: 14pt;
+  line-height: 24pt;
+  color: var(--color-text-dark-dark);
+}
+
+.caption-text {
+  font-family: var(--font-sans-serif);
+  font-size: 12pt;
+  color: var(--color-text-dark-medium);
+}
+
+.label-text {
+  font-family: var(--font-sans-serif);
+  font-size: 14pt;
+  text-transform: uppercase;
+}
+
+.ingredient-list-text {
+  font-family: var(--font-sans-serif);
+  font-size: 14pt;
+  line-height: 16pt;
+  color: var(--color-text-dark-dark);
+}
+
+.footnote-text {
+  font-family: var(--font-sans-serif);
+  font-size: 12pt;
+  color: var(--color-text-dark-medium);
+}

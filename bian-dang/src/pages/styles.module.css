@@ -1,7 +1,6 @@
 .tile {
   display: inline-block;
   color: #444;
-  /* border: 1px solid purple; */
 }
 
 @media (max-width: 576px) {

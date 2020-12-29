@@ -64,3 +64,12 @@
   src: url("../fonts/Alegreya/Alegreya-ExtraBoldItalic.ttf");
 } */
 
+@font-face {
+  font-family: "MQingHua";
+  src: url("../fonts/mqinghuahk.otf");
+}
+
+:root{
+  --font-sans-serif: Alegreya, Helvetica, Arial, sans-serif;
+  --font-serif: Dillan, Georgia, 'Times New Roman', MQingHua, serif;
+}
