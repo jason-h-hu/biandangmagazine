@@ -5,15 +5,17 @@ html {
   height: 100%;
 }
 
-html, body, #gatsby-focus-wrapper, #___gatsby {
+/* This is so the footers work :( */
+/* html, body, #gatsby-focus-wrapper, #___gatsby {
   height: 100%;
+} */
+
+a {
+  color: var(--color-101);
 }
 
 a:hover {
   text-decoration: none !important;
-}
-
-a:hover {
   color: var(--color-101) !important;
 }
 

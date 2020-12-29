@@ -85,7 +85,11 @@
 .body-text {
   font-family: var(--font-sans-serif);
   font-size: 14pt;
-  color: var(--test-color);
+  color: var(--color-text-dark-dark);
+}
+
+a.body-text {
+  color: var(--test-101);
 }
 
 .poetry-text {

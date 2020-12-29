@@ -3,13 +3,12 @@ import {Container, Col} from 'react-bootstrap'
 import {Helmet} from 'react-helmet';
 
 import Header from '../header';
-import Footer from '../footer';
 import NavigationButtons from '../navigation_buttons';
 import styles from './styles.module.css';
 
 export default function Page({title, children, nextPost, previousPost, volume}) {
   return (
-    <Container fluid className={styles.container}> 
+    <Container fluid className={styles.container}>
       <Helmet><title>{title}</title></Helmet>  
       <Header />
       <Col className={styles.layout}
@@ -19,7 +18,7 @@ export default function Page({title, children, nextPost, previousPost, volume}) 
         <div className={styles.page}>{children}</div>
         <NavigationButtons next={nextPost} previous={previousPost} home={volume}/>
       </Col>
-      <Footer />
+      <div className={styles.footer}>© 2020 Bian Dang Magazine</div>
     </Container>
   );
 }

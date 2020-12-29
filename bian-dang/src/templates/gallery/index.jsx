@@ -17,8 +17,8 @@ export default function Gallery({title, description, author, images}) {
       <div>
         {
           images.map(({resource, alt, caption}, i) => 
-            <div className={styles.imageWrapper}>
-              <Image key={i} src={resource} alt={alt} fluid />
+            <div className={styles.imageWrapper} key={i}>
+              <Image src={resource} alt={alt} fluid />
               {caption == null ? null : <div className={textStyles.captionText}>{caption}</div>}
             </div>
           )
