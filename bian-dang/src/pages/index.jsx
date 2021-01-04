@@ -1,19 +1,25 @@
 import React from 'react';
-import {Link} from 'gatsby';
+import {Container, Col} from 'react-bootstrap'
 import {Helmet} from 'react-helmet';
 
-import Layout from '../components/layout';
+import HomeGraphic from '../components/home_graphic';
+import Logotype from '../components/logotype';
+
+import styles from './styles.module.css';
 
 export default function Home() {
   return (
-    <Layout>
+    <Container fluid className={styles.container}>
       <Helmet><title>Bian Dang</title></Helmet>
-      <div>
-        <Link to={'/bao/'}><h4>Bao</h4></Link>
-        <Link to={'/bing/'}><h4>Bing</h4></Link>
-        <Link to={'/boba/'}><h4>Boba</h4></Link>
-        <Link to={'/ceramics/'}><h4>Ceramics</h4></Link>
+      <div className={styles.layout}>
+        <div className={styles.page}>
+          <div className={styles.logotype}>
+            <div className={styles.logotypeLarge}><Logotype size="large"/></div>
+            <div className={styles.logotypeMedium}><Logotype size="medium"/></div>
+          </div>
+        </div>
+        <HomeGraphic />
       </div>
-    </Layout>
+    </Container>
   );
 }

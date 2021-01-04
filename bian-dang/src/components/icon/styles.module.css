@@ -1,0 +1,14 @@
+@import "../../css/colors.css";
+
+.icon {
+  fill: var(--color-good-luck);
+}
+
+.icon:hover {
+  fill: var(--color-good-luck-faded-1);
+}
+
+.icon:focus {
+  fill: var(--color-good-luck-faded-2);
+  outline: none;
+}

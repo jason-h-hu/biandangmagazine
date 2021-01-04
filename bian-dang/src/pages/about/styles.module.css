@@ -2,20 +2,33 @@
 @import "../../css/typography.css";
 
 .header {
-  padding-bottom: 60px;
+  padding-bottom: 40px;
+}
+
+.profiles {
+  margin-top: 60px;
+}
+
+.profile {
+  margin-bottom: 20px;
+}
+.profile-picture {
+  border-radius: 25px;
+}
+
+.social {
+  font-size: 18px;
 }
 
 .social-link {
   font-family: var(--font-sans-serif);
   color: var(--color-101);
-  font-size: 18px;
   font-weight: bold;
 }
 
 .social-label {
   display: inline-block;
-  width: 140px;
-  text-align: right;
+  width: 30px;
+  text-align: center;
   margin-right: 10px;
 }
-

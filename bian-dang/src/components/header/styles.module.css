@@ -3,9 +3,9 @@
 
 .home {
   font-size: 24px;
-  font-weight: bold;
   font-family: var(--font-serif);
-  color: var(--color-text-dark-dark);
+  color: var(--color-good-luck);
+  padding-left: 10px;
 }
 
 .header {
@@ -14,13 +14,8 @@
 }
 
 .collapsed-button {
-  opacity: 0.5;
   border-width: 0px !important;
   padding-right: 0px;
-}
-
-.collapsed-button:hover {
-  opacity: 1;
 }
 
 .collapsed-button:focus {
@@ -31,10 +26,42 @@
   text-align: right;
 }
 
-.button {
-  padding-left: 10px;
-  padding-right: 10px;
+@media (max-width: 768px) {
+  .collapsed-home-button {
+    display: default;
+    padding-left: 0px;
+  }
+  .button {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+  .home {
+    display: none;
+  }
+
+  .buttons {
+    position: relative;
+  }
 }
+
+@media (min-width: 768px) {
+  .collapsed-home-button {
+    display: none;
+  }
+
+  .button {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
 
 .link {
   color: var(--color-text-dark-dark);

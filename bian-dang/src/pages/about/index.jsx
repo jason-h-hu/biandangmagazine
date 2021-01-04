@@ -1,5 +1,8 @@
 import React from 'react';
 import {Image, Row, Col} from 'react-bootstrap'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram, faEtsy, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 
 import Page from '../../components/page';
 import textStyles from '../../css/text.module.css';
@@ -10,6 +13,11 @@ import jasonProfilePic from './jason.jpg';
 import jessicaProfilePic from './jessica.jpg';
 import carolynProfilePic from './carolyn.jpg';
 
+const ICON_LOOKUP = {
+  Instagram: faInstagram,
+  Twitter: faTwitter,
+  Etsy: faEtsy,
+}
 export default function About() {
   return (
     <Page title="About">
@@ -20,6 +28,7 @@ export default function About() {
         <p>開飯</p>
       </div>
       <div className={styles.profiles}>
+        <div className={styles.header}><span className={textStyles.headerLg}>The Team</span></div>
         {
           [
             {
@@ -65,7 +74,7 @@ export default function About() {
             ({resource, name, biography, social}) => 
               <Row className={styles.profile}>
                 <Col md={6}>
-                  <Image src={resource} alt={name} fluid/> 
+                  <Image className={styles.profilePicture} src={resource} alt={name} fluid/> 
                 </Col>
                 <Col md={6}>
                   <div className={textStyles.headerMd}>{name}</div>
@@ -73,8 +82,16 @@ export default function About() {
                   <Row>{
                     social.map(({label, value, url}, i) => 
                       <Col md={12} key={i} className={styles.social}>
-                        <span className={styles.socialLabel}><span className={textStyles.labelText}>{label}: </span></span>
-                        <a className={styles.socialLink} href={url}>{value}</a>
+                        <a className={styles.socialLink} href={url}>
+                          <span className={styles.socialLabel}>
+                            {
+                              ICON_LOOKUP[label] == null 
+                                ? <FontAwesomeIcon icon={faGlobe} />
+                                : <FontAwesomeIcon icon={ICON_LOOKUP[label]} />
+                            }
+                          </span>
+                          <span className={styles.socialValue} href={url}>{value}</span>
+                        </a>
                       </Col>
                     )
                   }</Row>

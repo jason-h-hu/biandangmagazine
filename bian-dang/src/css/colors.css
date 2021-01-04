@@ -1,6 +1,8 @@
 :root{
   --color-memories: rgb(247, 241, 225);
   --color-good-luck: rgb(253, 31, 0);
+  --color-good-luck-faded-1: rgb(253, 31, 0, 0.75);
+  --color-good-luck-faded-2: rgb(253, 31, 0, 0.5);
   --color-101: rgb(0, 121, 109);
   --color-101-faded-1: rgb(0, 121, 109, 0.75);
   --color-101-faded-2: rgb(0, 121, 109, 0.5);
