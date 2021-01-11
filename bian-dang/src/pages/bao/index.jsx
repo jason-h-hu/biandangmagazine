@@ -5,7 +5,7 @@ import Poem from '../../templates/poem';
 
 export default function Bao() {
   return (
-    <Page title="Bao" nextPost='/bing' previousPost='/ceramics' volume="/">
+    <Page title="Bao" nextPost='/bing' previousPost='/bowl' volume="/">
       <Poem title="Bao" author="Carolyn Huang">
         <p>
           Nestled in a brimming platter<br/>

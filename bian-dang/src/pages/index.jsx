@@ -4,6 +4,7 @@ import {Container, Col, Row} from 'react-bootstrap'
 import {Helmet} from 'react-helmet';
 
 import HomeGraphic from '../components/home_graphic';
+import HomeList from '../components/home_list';
 import Header from '../components/header';
 import Logotype from '../components/logotype';
 
@@ -22,7 +23,8 @@ export default function Home() {
             <div className={styles.button}><Link className={styles.link} to="/contact">Contact</Link></div>
           </div>
         </Col>
-        <Col className={styles.homegraphic} lg={9}><HomeGraphic /></Col>
+        <Col className={styles.homeGraphic} lg={9}><HomeGraphic /></Col>
+        <Col className={styles.homeList} lg={9}><HomeList /></Col>
       </Row>
     </Container>
   );

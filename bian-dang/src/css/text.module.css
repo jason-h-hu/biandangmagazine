@@ -102,6 +102,7 @@ a.body-text {
 .caption-text {
   font-family: var(--font-sans-serif);
   font-size: 12pt;
+  line-height: 14pt;
   color: var(--color-text-dark-medium);
 }
 

@@ -5,25 +5,36 @@
   padding-bottom: 40px;
 }
 
-.profiles {
-  margin-top: 60px;
+.section {
+  padding-bottom: 60px;
 }
 
 .profile {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
+
+.profile-name {
+  font-size: 18px;
+  font-family: var(--font-serif);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .profile-picture {
   border-radius: 25px;
 }
 
-.social {
-  font-size: 18px;
+.socials {
+  padding-top: 20px;
 }
 
 .social-link {
+  font-size: 16px;
   font-family: var(--font-sans-serif);
   color: var(--color-101);
   font-weight: bold;
+  width: 100%;
+  display: inline-block;
 }
 
 .social-label {
