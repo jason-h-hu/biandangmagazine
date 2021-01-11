@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Dillan";
+  src: url("../fonts/dillan.otf");
+}
+
+@font-face {
+  font-family: "Optima";
+  src: url("../fonts/optima/Optima-Italic.woff");
+  font-style: italic, oblique;
+}
+
+@font-face {
+  font-family: "Optima";
+  src: url("../fonts/optima/Optima-Bold.woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Optima";
+  src: url("../fonts/optima/Optima.woff");
+}
+
+@font-face {
+  font-family: "MQingHua";
+  src: url("../fonts/mqinghuahk.otf");
+}
+
+:root{
+  --font-sans-serif: Optima, Helvetica, Arial, sans-serif;
+  --font-serif: Dillan, Georgia, 'Times New Roman', MQingHua, serif;
+}

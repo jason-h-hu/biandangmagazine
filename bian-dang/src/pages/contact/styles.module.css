@@ -1,0 +1,29 @@
+@import "../../css/colors.css";
+@import "../../css/typography.css";
+
+.contact {
+  padding-bottom: 40px;
+}
+
+.submit-button {
+  padding: 15px !important;
+  margin-top: 40px !important;
+  font-family: var(--font-sans-serif);
+  font-size: 10pt !important;
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+  background-color: var(--color-101) !important;; 
+  border-color: var(--color-101) !important;; 
+}
+
+.submit-button:hover {
+  background-color: var(--color-101-faded) !important; 
+  border-color: var(--color-101-faded) !important; 
+  opacity: 0.8 !important; 
+}
+
+.submit-button:active {
+  background-color: var(--color-101) !important; 
+  border-color: var(--color-101) !important; 
+  opacity: 0.6 !important; 
+}

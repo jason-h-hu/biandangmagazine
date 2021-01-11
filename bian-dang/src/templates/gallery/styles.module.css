@@ -1,0 +1,19 @@
+.header {
+  padding-bottom: 60px;
+}
+
+.description {
+  padding-bottom: 10px;
+}
+
+.image-wrapper {
+  padding: 0px;
+  padding-bottom: 10px;
+  border-style: none !important;
+  outline: none !important;
+}
+
+.image-wrapper:focus {
+  border-style: none !important;
+  outline: none !important;
+}
