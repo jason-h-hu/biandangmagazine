@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/404.jsx"],"names":["ErrorPage"],"mappings":"2FAAA,wEAEe,SAASA,IACtB,OAAO","file":"component---src-pages-404-jsx-d95e9beb7e7c654b6ea5.js","sourcesContent":["import React from \"react\"\n\nexport default function ErrorPage() {\n  return <div>404</div>\n}\n"],"sourceRoot":""}
