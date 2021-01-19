@@ -10,6 +10,9 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+
+  background-size: cover;
+  background-position: center;
 }
 
 .page {
@@ -50,3 +53,15 @@
 
   flex-shrink: 0;
 }
+
+@media (max-width: 768px) {
+  .rubber-bands {
+    display: none;
+  }
+}
+.rubber-band {
+  width: 50%;
+  min-width: 300px;
+  position: absolute;
+}
+
