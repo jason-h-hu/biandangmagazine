@@ -13,11 +13,11 @@ export default function Boba() {
       <Gallery 
         title="With boba, half sweet" 
         author="Jessica Lin"
-        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
+        description="Since growing up as a third culture kid in Singapore, I have always had a mixed sense of “home”. Maybe because the things I love are spread across the globe: my family's in Taiwan, my memories are in Singapore, and my core is in San Francisco. However, throughout the years, I have found a constant familiarity in the simplest comfort: bubble tea. Or boba tea. Or pearl milk tea. Or 珍珠奶茶. Just like how this deliciously satisfying drink has different names in different places, the way boba fit into my life evolved through time and life phases."
         images={[
-          {resource: boba1, caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
-          {resource: boba2, caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
-          {resource: boba3, caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+          {resource: boba1, caption: 'As a child in Singapore, bubble tea was accompanied by a fresh pandan waffle after school. It was a walk in the warm tropical rain. It was grocery shopping with my mom, zoning out to the beeping of the cashiers after a long dance practice.'},
+          {resource: boba2, caption: 'As a college student in Los Angeles, boba was late night drives to San Gabriel Valley. It was fundraisers for clubs and culture nights. It was aimlessly walking around Sawtelle with friends, wondering where the heck we would all end up after graduation.'},
+          {resource: boba3, caption: 'As an adult in San Francisco, boba is the constant struggle to find equilibrium. It is finding creativity in everything I see and do. It is a bittersweet reminder of just how far away I am from home.'},
         ]}
       />
     </Page>

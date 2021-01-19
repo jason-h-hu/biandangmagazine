@@ -44,14 +44,20 @@ export default class Gallery extends React.Component{
         <div>
           {
             images.map(({resource, alt, caption}, i) => 
-              <button 
+              <a 
                 className={styles.imageWrapper} 
                 key={i} 
                 onClick={() => this.openModal(i)
               }>
                 <Image src={resource} alt={alt} fluid />
-                {caption == null ? null : <div className={textStyles.captionText}>{caption}</div>}
-              </button>
+                {
+                  caption == null 
+                    ? null 
+                    : <div className={styles.caption}>
+                        <span className={textStyles.captionText}>{caption}</span>
+                      </div>
+                }
+              </a>
             )
           }
         </div>
