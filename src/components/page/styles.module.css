@@ -37,8 +37,7 @@
 }
 
 .footer {
-  background: var(--color-101); 
-  color: var(--color-text-light-light);
+  color: var(--color-101);
   font-family: var(--font-sans-serif);
   font-size: 12px;
   text-align: center;

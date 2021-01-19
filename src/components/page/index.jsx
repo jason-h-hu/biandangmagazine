@@ -18,7 +18,7 @@ export default function Page({title, children, nextPost, previousPost, volume}) 
         <div className={styles.page}>{children}</div>
         <NavigationButtons next={nextPost} previous={previousPost} home={volume}/>
       </Col>
-      <div className={styles.footer}>© 2020 Bian Dang Magazine</div>
+      <div className={styles.footer}>© 2021 Bian Dang Magazine</div>
     </Container>
   );
 }
