@@ -2,11 +2,11 @@ import React from 'react';
 import {Link} from 'gatsby';
 import {Image, Row, Col} from 'react-bootstrap'
 
-import HomeImage from './Home@3x.png';
-import BobaImage from './Home_1@3x.png';
-import BingImage from './Home_2@3x.png';
-import BowlImage from './Home_3@3x.png';
-import BaoImage from './Home_4@3x.png';
+import HomeImage from './Home@2x.png';
+import BobaImage from './Home_1@2x.png';
+import BingImage from './Home_2@2x.png';
+import BowlImage from './Home_3@2x.png';
+import BaoImage from './Home_4@2x.png';
 import styles from './styles.module.css';
 
 export default class Home extends React.Component {
