@@ -1,71 +1,52 @@
 @import "../../css/typography.css";
 @import "../../css/colors.css";
 
-.home {
-  font-size: 24px;
-  font-family: var(--font-serif);
-  color: var(--color-good-luck);
-  padding-left: 10px;
-}
-
 .header {
   margin-left: -15px;
   margin-right: -15px;
+  margin-bottom: 50px;
 }
 
-.collapsed-button {
+@media (max-width: 576px) { .home { padding-left: 10px; padding-top: 15px; }}
+@media (min-width: 576px) { .home { padding-left: 20px; padding-top: 20px; }}
+@media (max-width: 576px) { .medium-logo-button { display: none; }}
+@media (min-width: 576px) { .small-logo-button { display: none; }}
+
+.hamburger-button {
   border-width: 0px !important;
+}
+
+@media (min-width: 576px) { 
+  .buttons { 
+    position: absolute;
+    top: 30px; 
+    right: 30px; 
+  }
+}
+
+.button {
+  text-align: right;
+  padding-left: 10px;
   padding-right: 10px;
 }
-
-.collapsed-button:focus {
-  outline: none;
-}
-
-.buttons {
-  text-align: right;
-}
-
-@media (max-width: 768px) {
-  .collapsed-home-button {
-    display: default;
-    padding-left: 0px;
-  }
-  .button {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  
-  .home {
-    display: none;
-  }
-
-  .buttons {
-    position: relative;
+@media (max-width: 576px) { 
+  .button { 
+    display: relative; 
   }
 }
-
-@media (min-width: 768px) {
-  .collapsed-home-button {
-    display: none;
+@media (min-width: 576px) { 
+  .button { 
+    display: inline; 
   }
-
-  .button {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .buttons {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+  .button:last-child { 
+    padding-right: 0px; 
   }
 }
 
 .link {
   color: var(--color-text-dark-dark);
-  font-size: 14px;
   font-weight: bold;
-  text-transform: uppercase;
   font-family: var(--font-serif);
 }
+@media (max-width: 576px) { .link { font-size: 16px; }}
+@media (min-width: 576px) { .link { font-size: 18px; }}

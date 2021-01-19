@@ -4,9 +4,9 @@ import {Link} from 'gatsby';
 import styles from './styles.module.css';
 
 const SIZES={
-  small: {width: 60, height: 60},
+  small: {width: 80, height: 80},
   medium: {width: 100, height: 100},
-  large: {width: 200, height: 200},
+  large: {width: 180, height: 180},
 }
 export default function Logotype({size='large'}) {
   // NOTE: This was generated from './icon.svg' using the site: https://transform.tools/ 
