@@ -34,8 +34,9 @@ export default class Home extends React.Component {
               {style: 'bing', title: 'Bing', url: '/bing/', img: BingImage},
               {style: 'bowl', title: 'Bowl', url: '/bowl/', img: BowlImage},
               {style: 'bao', title: 'Bao', url: '/bao/', img: BaoImage},
-            ].map(({style, title, url, img}) => 
+            ].map(({style, title, url, img}, i) => 
               <Link 
+                key={i}
                 to={url}
                 className={styles[style]} 
                 onMouseOver={() => this.onMouseOver(img)}

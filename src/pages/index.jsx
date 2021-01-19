@@ -14,17 +14,32 @@ export default function Home() {
   return (
     <Container fluid className={styles.container}>
       <Helmet><title>Bian Dang</title></Helmet>
-      <div className={styles.mobileHeader}><Header/></div>
-      <Row className={styles.page}>
-        <Col lg={3} className={styles.browserHeader}>
+      <Row className={styles.largeView}>
+        <Col lg={3} className={styles.desktopHeader}>
           <div className={styles.logotype}><Logotype size="large"/></div>
           <div className={styles.buttons}>
-            <div className={styles.button}><Link className={styles.link} to="/about">About</Link></div>
-            <div className={styles.button}><Link className={styles.link} to="/contact">Contact</Link></div>
+            {
+              [
+                {link: "/about", text: 'About'},
+                {link: "/team", text: 'The Team'},
+                {link: "/brand", text: 'The Brand'},
+              ].map(({link, text}, i) => 
+                <div className={styles.button} key={i}>
+                  <Link className={styles.link} to={link}>{text}</Link>
+                </div>
+              )
+            }
           </div>
         </Col>
-        <Col className={styles.homeGraphic} lg={9}><HomeGraphic /></Col>
-        <Col className={styles.homeList} lg={9}><HomeList /></Col>
+        <Col className={styles.desktopHome} lg={8}><HomeGraphic /></Col>
+      </Row>
+      <Row className={styles.mediumView}>
+        <Col xs={12}><Header/></Col>
+        <Col xs={12}><HomeGraphic/></Col>
+      </Row>
+      <Row className={styles.smallView}>
+        <Col xs={12}><Header/></Col>
+        <Col xs={12}><HomeList /></Col>
       </Row>
     </Container>
   );

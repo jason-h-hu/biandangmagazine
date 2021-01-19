@@ -4,45 +4,31 @@
   background-color: var(--color-memories);
 }
 
-.browser-header {
+.desktop-header {
   text-align: right;
 }
 
-.page {
-  max-width: 1200px;
+.large-view {
+  max-width: 1600px;
   margin: auto;
-}
-
-@media (min-width: 992px) {
-  .browser-header {display: normal;}
-  .mobile-header {display: none;}
-}
-
-@media (max-width: 992px) {
-  .browser-header {display: none;}
-  .mobile-header {display: normal;}
-}
-
-.home-graphic {
-  margin-top: 50px;
-}
-
-.home-list {
-  margin-top: 20px;
-  padding: 0px;
+  transform: translateX(-6%);
+  padding-top: 50px;
 }
 
 @media (min-width: 992px) { 
-  .home-graphic { margin-top: 50px; }
-  .home-list { display: none; }
+  .large-view { display: normal; }
+  .medium-view { display: none; }
+  .small-view { display: none; }
 }
 @media (max-width: 992px) and (min-width: 576px) { 
-  .home-graphic { margin-top: 10px; }
-  .home-list { display: none; }
+  .large-view { display: none; }
+  .medium-view { display: normal; }
+  .small-view { display: none; }
 }
 @media (max-width: 576px) { 
-  .home-graphic { display: none; }
-  .home-list { display: inherit; }
+  .large-view { display: none; }
+  .medium-view { display: none; }
+  .small-view { display: normal; }
 }
 
 .logotype {
