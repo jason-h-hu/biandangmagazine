@@ -17,6 +17,7 @@
   display: inline-block;
   border-style: none !important;
   outline: none !important;
+  background: none;
 }
 
 .image-wrapper:focus {
