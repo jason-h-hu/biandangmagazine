@@ -14,7 +14,7 @@ export default function HomeList() {
     <div className={styles.homeList}>
       {
         [
-          {img: BobaImage, style: 'boba', author: 'Jessica Lin', title: 'With boba, half sweet', url: '/boba/'},
+          {img: BobaImage, style: 'boba', author: 'Jessica Lin', title: 'Boba', url: '/boba/'},
           {img: BingImage, style: 'bing', author: 'Jason Hu', title: 'Bing', url: '/bing/'},
           {img: BowlImage, style: 'bowl', author: 'Jane Li', title: 'Bowl', url: '/bowl/'},
           {img: BaoImage, style: 'bao', author: 'Carolyn Huang', title: 'Bao', url: '/bao/'},

@@ -4,8 +4,7 @@
 .container {
   background-color: var(--color-memories);
   position: relative;
-  min-height: calc(100vh - 80px);
-  margin-bottom: -100px;
+  height: 100%;
 
   display: flex;
   min-height: 100vh;
@@ -60,9 +59,14 @@
     display: none;
   }
 }
+
+.rubber-bands {
+  overflow: hidden;
+}
+
 .rubber-band {
   width: 50%;
-  min-width: 300px;
+  min-width: 400px;
   position: absolute;
 }
 

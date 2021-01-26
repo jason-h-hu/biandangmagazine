@@ -8,7 +8,7 @@ import styles from './styles.module.css';
 
 import janeProfilePic from './jane.jpg';
 import jasonProfilePic from './jason.jpg';
-import jessicaProfilePic from './jessica.jpg';
+import jessicaProfilePic from './jess.jpg';
 import carolynProfilePic from './carolyn.jpg';
 
 const PROFILE_DATA = [

@@ -5,12 +5,12 @@ import {Helmet} from 'react-helmet';
 import Header from '../header';
 import NavigationButtons from '../navigation_buttons';
 import styles from './styles.module.css';
-import bands1 from './rubber_bands/rubber_bands_1.png';
-import bands2 from './rubber_bands/rubber_bands_2.png';
-import bands3 from './rubber_bands/rubber_bands_3.png';
-import bands4 from './rubber_bands/rubber_bands_4.png';
-import bands5 from './rubber_bands/rubber_bands_5.png';
-import bands6 from './rubber_bands/rubber_bands_6.png';
+import bands1 from './rubber_bands/rubber_bands_1.svg';
+import bands2 from './rubber_bands/rubber_bands_2.svg';
+import bands3 from './rubber_bands/rubber_bands_3.svg';
+import bands4 from './rubber_bands/rubber_bands_4.svg';
+import bands5 from './rubber_bands/rubber_bands_5.svg';
+import bands6 from './rubber_bands/rubber_bands_6.svg';
 
 export default function Page({
   title, // string
@@ -22,44 +22,54 @@ export default function Page({
 }) {
   const style = backgroundImage == null ? 
     {} : 
-    {"background-image": `url("${backgroundImage}")`};
+    {backgroundImage: `url("${backgroundImage}")`};
 
   const rubberBandImages = backgroundImage == null ?
     getRandomBands(2) :
-    [];
+    []; 
 
   return (
     <Container fluid className={styles.container} style={style}>
       <Helmet><title>{title}</title></Helmet>  
-      <Header />
-      <Row>
+      <Header darkMode={backgroundImage != null} />
+      <Row className={styles.layout}>
         <Col lg={3} md={2} className={styles.rubberBands}>
           {
             rubberBandImages[0] == null ? 
               null : 
               <div className={styles.rubberBand} 
-                style={{top: `${randomRange(10, 70)}%`, right: `${randomRange(-10, 50)}%`}}>
+                style={{
+                  top: `${randomRange(10, 100)}px`, 
+                  right: `${randomRange(10, 50)}%`,
+                }}>
                 <Image src={rubberBandImages[0]} fluid />
               </div>
           }
         </Col>
         <Col className={styles.layout} lg={6} md={8}>
           <div className={styles.page}>{children}</div>
-          <NavigationButtons next={nextPost} previous={previousPost} home={volume}/>
+          <NavigationButtons 
+            next={nextPost} 
+            previous={previousPost} 
+            home={volume} 
+            darkMode={backgroundImage != null}
+          />
         </Col>
         <Col lg={3} md={2} className={styles.rubberBands}>
         {
           rubberBandImages[1] == null ? 
             null : 
             <div className={styles.rubberBand} 
-              style={{bottom: `${randomRange(-10, 70)}%`, left: `${randomRange(10, 50)}%`}}>
+              style={{
+                bottom: `${randomRange(-100, 100)}px`, 
+                left: `${randomRange(10, 50)}%`,
+              }}>
               <Image src={rubberBandImages[1]} fluid />
             </div>
         }
       </Col>
-
-      </Row>
-      <div className={styles.footer}>© 2021 Bian Dang Magazine</div>
+    </Row>
+    <div className={styles.footer}>© 2021 Bian Dang Magazine</div>
     </Container>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 import Page from '../../components/page';
 import Poem from '../../templates/poem';
-import BaoImage from './bao.png';
+import BaoImage from './bao.jpg';
 
 export default function Bao() {
   return (
