@@ -7,7 +7,7 @@ const SIZES={
   xsmall: {width: 60, height: 60}, // NOTE: This isn't used, since "xsmall" is just the icon instead
   small: {width: 80, height: 80},
   medium: {width: 100, height: 100},
-  large: {width: 130, height: 130},
+  large: {width: 120, height: 120},
   xlarge: {width: 160, height: 160},
 }
 export default function Logotype({size='large'}) {

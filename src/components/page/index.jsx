@@ -3,6 +3,7 @@ import {Image, Container, Row, Col} from 'react-bootstrap'
 import {Helmet} from 'react-helmet';
 
 import Header from '../header';
+import Footer from '../footer';
 import NavigationButtons from '../navigation_buttons';
 import styles from './styles.module.css';
 import bands1 from './rubber_bands/rubber_bands_1.svg';
@@ -54,7 +55,7 @@ export default function Page({
             home={volume} 
             darkMode={backgroundImage != null}
           />
-          <div className={styles.footer}>© 2021 Bian Dang Zine</div>
+          <Footer/>
         </Col>
         <Col lg={3} md={2} className={styles.rubberBands}>
         {

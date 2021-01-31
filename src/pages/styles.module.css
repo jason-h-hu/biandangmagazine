@@ -2,32 +2,45 @@
 
 .container {
   width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+.body {
+  flex: 1 0 auto;
+}
+
+.xlarge-view, .large-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.medium-view, .small-view {
+  display: flex;
+  flex-direction: column;
+}
+
 .desktop-header {
   text-align: right;
-  display: inline-block;
 }
 .desktop-home {
-  display: inline-block;
+  position: relative;
 }
 
-@media (min-width: 992px) {
-  .desktop-header { width: 20%; margin-right: 40px; margin-left: -5%}
-  .desktop-home { width: 80%; min-width: 713px; position: absolute; }
+@media (min-width: 1200px) {
+  .desktop-header { padding: 100px 40px 0px 8%; }
+  .desktop-home { padding: 50px 15% 0px 0px; }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .desktop-header { padding: 50px 40px 0px 5%; }
+  .desktop-home { padding: 50px 5% 0px 0px; }
 }
 @media (max-width: 992px) and (min-width: 768px) {
-  .desktop-header { width: 20%; margin-right: 30px; margin-left: -5%}
-  .desktop-home { width: 80%; position: absolute; }
+  .desktop-header { padding: 40px 20px 0px 30px; }
+  .desktop-home { padding: 50px 40px 0px 0px; }
 }
-@media (max-width: 768px) and (min-width: 576px) {
-  .desktop-header { width: 0%; }
-  .desktop-home { width: 100%; position: relative; } /* I have no idea why this has to be relative to work*/
-}
-
-.xlarge-view { position: relative; top: 0; width: 80%; margin: auto; max-width: 1200px; }
-.large-view { position: relative; top: 0; width: 90%; margin: auto; }
-.medium-view { position: relative; top: 0; width: 100%; }
-.small-view { position: relative; top: 0; width: 100%; }
 
 @media (min-width: 992px) { 
   .xlarge-view { display: normal; }
@@ -52,13 +65,6 @@
   .large-view { display: none; }
   .medium-view { display: none; }
   .small-view { display: normal; }
-}
-
-.xlarge-view {
-  padding-top: 10vh;
-}
-.large-view {
-  padding-top: 10vh;
 }
 
 .medium-view {
@@ -88,3 +94,8 @@
 }
 @media (min-width: 992px) { .link { font-size: 22px;} }
 @media (max-width: 992px) { .link { font-size: 18px;} }
+
+.footer {
+  flex-shrink: 1;
+  /* top: 50px; */
+}
