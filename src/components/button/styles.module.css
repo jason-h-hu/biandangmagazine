@@ -1,0 +1,24 @@
+@import "../../css/colors.css";
+@import "../../css/typography.css";
+
+.button {
+  padding: 10px;
+  font-family: var(--font-serif);
+  font-size: 12pt;
+  display: inline-block;
+  border-radius: 8px;
+  border: 2px solid var(--color-good-luck);
+  color: var(--color-good-luck);
+}
+
+.button:hover {
+  background-color: var(--color-101-faded); 
+  border-color: var(--color-101-faded); 
+  opacity: 0.8; 
+}
+
+.button:active {
+  background-color: var(--color-101); 
+  border-color: var(--color-101); 
+  opacity: 0.6; 
+}

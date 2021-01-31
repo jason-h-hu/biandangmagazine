@@ -7,6 +7,7 @@ export default function Recipe({
   title, 
   translation,
   author, 
+  slug,
   yieldAmount, 
   prepTime,
   ingredientSections,
@@ -14,10 +15,10 @@ export default function Recipe({
 }) {
   const notes = [];
   return (
-    <div>
+    <div id={slug == null ? null : slug}>
       <div className={styles.header}>
         <div className={textStyles.headerLg}>{title} <span className={textStyles.headerMd}>{translation == null ? null : `(${translation})`}</span></div>
-        <div className={textStyles.headerMd}>by {author}</div>
+        {author == null ? null : <div className={textStyles.headerMd}>by {author}</div>}
         <div className={styles.attributes}>
           <div className={textStyles.headerXs}>Yield: {yieldAmount}</div>
           <div className={textStyles.headerXs}>Time: {prepTime}</div>
@@ -34,7 +35,11 @@ export default function Recipe({
                     sectionTitle == null 
                       ? null 
                       : <div className={textStyles.headerSm}>
-                          {sectionTitle} {note == null ? null : <a className={textStyles.headerSm} href={`#NOTE${notes.length}`}><sup> {notes.length}</sup></a>}
+                          {sectionTitle} {
+                            note == null 
+                              ? null 
+                              : <a className={textStyles.headerSm} href={`#NOTE${notes.length}`}><sup> {notes.length}</sup></a>
+                            }
                         </div>
                   }
                   <ul className={styles.ingredientsList}>

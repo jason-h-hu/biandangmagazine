@@ -9,7 +9,7 @@ import boba3 from './boba_3.jpg';
 
 export default function Boba() {
   return (
-    <Page title="Boba" nextPost="/bowl" previousPost="/bing_recipe" volume="/">
+    <Page title="Boba" nextPost="/bowl" previousPost="/bing" volume="/">
       <Gallery 
         title="Boba" 
         author="Jessica Lin"
