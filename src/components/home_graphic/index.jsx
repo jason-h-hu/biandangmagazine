@@ -25,7 +25,7 @@ export default class Home extends React.Component {
   
   render() {
     return (
-      <div>
+      <div className={styles.wrapper}>
         <Image src={this.getBackgroundImage()} fluid/>
         <div className={styles.gridOuter}>
           {
