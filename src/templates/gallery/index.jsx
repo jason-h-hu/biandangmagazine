@@ -18,8 +18,8 @@ export default class Gallery extends React.Component{
 
   render() {
     const {title, description, author, images, photoIndex, isOpen} = this.state;
-    const prevIndex = (photoIndex + 1) % images.length;
-    const nextIndex = (photoIndex + images.length - 1) % images.length;
+    const prevIndex = (photoIndex + images.length - 1) % images.length;
+    const nextIndex = (photoIndex + 1) % images.length;
     return (
       <div>
         <div className={styles.header}>
