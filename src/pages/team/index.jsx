@@ -73,7 +73,7 @@ export default function Team() {
         <Row className={styles.profiles}>
           {
             PROFILE_DATA.map(({img, name, biography, prompt, answer, social, position}, i) => 
-              <Col md={6} key={i}>
+              <Col sm={6} key={i}>
                 <Profile 
                   img={img} 
                   name={name} 
