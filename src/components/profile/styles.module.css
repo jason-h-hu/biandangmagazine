@@ -9,11 +9,32 @@
   font-size: 18px;
   font-family: var(--font-serif);
   padding-top: 10px;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
 }
 
 .profile-picture {
   border-radius: 25px;
+}
+
+.position {
+  font-family: var(--font-sans-serif);
+  font-size: 18px;
+  line-height: 18px;
+  padding-bottom: 20px;
+}
+
+.prompt {
+  font-family: var(--font-sans-serif);
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.answer {
+  font-family: var(--font-sans-serif);
+  font-size: 18px;
+  line-height: 18px;
 }
 
 .socials {

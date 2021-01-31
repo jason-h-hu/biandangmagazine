@@ -12,12 +12,14 @@ const ICON_LOOKUP = {
   Twitter: faTwitter,
   Etsy: faEtsy,
 }
-export default function Profile({img, name, biography, social}) {
+export default function Profile({img, name, biography, position, social, prompt, answer}) {
   return (
     <div className={styles.profile}>
       <Image className={styles.profilePicture} src={img} alt={name} fluid /> 
       <div className={styles.profileName}>{name}</div>
-      <div className={textStyles.captionText}>{biography}</div>
+      <div className={styles.position}>{position}</div>
+      <div className={styles.prompt}>{prompt}</div>
+      <div className={styles.answer}>{answer}</div>
       <div className={styles.socials}>{
         social.map(({label, value, url}, i) => 
           <a className={styles.socialLink} href={url} key={i}>
