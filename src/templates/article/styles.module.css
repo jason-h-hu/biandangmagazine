@@ -1,3 +1,17 @@
+.article {
+  padding-bottom: 60px;
+}
+
+.by-lines {
+  padding-bottom: 20px;
+}
 .header {
   padding-bottom: 60px;
+}
+
+.callout {
+  display: inline-block;
+  padding: 10px;
+  border: rebeccapurple;
+  background-color: red;
 }
