@@ -19,12 +19,10 @@ export default function Page({
   previousPost, // url-string
   volume, // url-string
   backgroundImage, // gatsby-image
+  fullWidth, // bootstrap
   children, // react component
 }) {
-  const style = backgroundImage == null ? 
-    {} : 
-    {backgroundImage: `url("${backgroundImage}")`};
-
+  const style = backgroundImage == null ? {} : {backgroundImage: `url("${backgroundImage}")`};
   const rubberBandImages = backgroundImage == null ?
     getRandomBands(2) :
     []; 
@@ -34,7 +32,7 @@ export default function Page({
       <Helmet><title>{title}</title></Helmet>  
       <Header darkMode={backgroundImage != null} />
       <Row className={styles.fullHeight}>
-        <Col lg={3} md={2} className={styles.rubberBands}>
+        <Col lg={3} md={2} className={fullWidth ? styles.hidden : styles.rubberBands}>
           {
             rubberBandImages[0] == null ? 
               null : 
@@ -47,8 +45,8 @@ export default function Page({
               </div>
           }
         </Col>
-        <Col className={styles.layout} lg={6} md={8}>
-          <div className={styles.page}>{children}</div>
+        <Col className={styles.layout} lg={fullWidth ? 12 : 6} md={fullWidth ? 12 : 8}>
+          <div className={fullWidth ? styles.fullPage : styles.page}>{children}</div>
           <NavigationButtons 
             next={nextPost} 
             previous={previousPost} 
@@ -57,7 +55,7 @@ export default function Page({
           />
           <Footer/>
         </Col>
-        <Col lg={3} md={2} className={styles.rubberBands}>
+        <Col lg={3} md={2} className={fullWidth ? styles.hidden : styles.rubberBands}>
         {
           rubberBandImages[1] == null ? 
             null : 
