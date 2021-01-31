@@ -3,17 +3,23 @@
 
 .profile {
   margin-bottom: 60px;
-}
-
-.profile-name {
-  font-size: 18px;
-  font-family: var(--font-serif);
-  padding-top: 10px;
-  /* padding-bottom: 10px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profile-picture {
   border-radius: 25px;
+}
+
+.profile-information {
+  flex-grow: 1;
+}
+.profile-name {
+  font-size: 24px;
+  font-family: var(--font-serif);
+  padding-top: 10px;
+  /* padding-bottom: 10px; */
 }
 
 .position {
