@@ -30,7 +30,7 @@ const PROFILE_DATA = [
     name: 'Jason Hu', 
     position: "Programmer",
     prompt: 'Any food/eating habit dating deal breakers?',
-    answer: 'I don’t mind picky eaters but have no patience for snobbery',
+    answer: 'I’ll take a picky eater over a snobby one',
     biography: 'I love writing about, reading, and (of course) eating diasporic food. It is the first touchpoint between cultures, and at the same time, recipes are an enduring piece of home that can follow you anywhere. For me, Taiwanese-American food is more than just the novelty and kitsch of fusion cuisine: In the hyphen you can find flavors of adaptation and ingenuity. 便當 is a way for me to explore and celebrate these foods.',
     social: [
       {label: 'Instagram', value: '@little_huligan', url: 'https://www.instagram.com/little_huligan/'},

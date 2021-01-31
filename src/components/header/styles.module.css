@@ -44,38 +44,30 @@
   .buttons {  position: absolute; top: 20px;  right: 10px; }
 }
 
-
 .button {
   text-align: right;
   padding-left: 10px;
   padding-right: 10px;
 }
+
 @media (max-width: 576px) { 
-  .button { 
-    display: relative; 
-    padding-right: 0px;
-  }
+  .button { display: relative; padding-right: 0px; }
 }
+
 @media (min-width: 576px) { 
-  .button { 
-    display: inline; 
-  }
-  .button:last-child { 
-    padding-right: 0px; 
-  }
+  .button { display: inline; }
+  .button:last-child { padding-right: 0px; }
 }
 
-.link {
-  color: var(--color-text-dark-dark);
+.link, .link-dark {
   font-weight: bold;
   font-family: var(--font-serif);
 }
+@media (max-width: 576px) { .link, .link-dark { font-size: 16px; }}
+@media (min-width: 576px) { .link, .link-dark { font-size: 18px; }}
 
-.link-dm {
-  color: var(--color-memories);
-  font-weight: bold;
-  font-family: var(--font-serif);
-}
-
-@media (max-width: 576px) { .link { font-size: 16px; }}
-@media (min-width: 576px) { .link { font-size: 18px; }}
+.link { color: var(--color-text-dark-dark); }
+.link-dark { color: var(--color-memories); }
+.button:nth-child(1) > .link:hover, .button:nth-child(1) > .link-dark:hover { color: var(--color-golden-carbs); }
+.button:nth-child(2) > .link:hover, .button:nth-child(2) > .link-dark:hover { color: var(--color-101); }
+.button:nth-child(3) > .link:hover, .button:nth-child(3) > .link-dark:hover { color: var(--color-good-luck); }
