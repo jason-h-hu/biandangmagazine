@@ -34,6 +34,7 @@
 .hamburger-button-dark {
   border-width: 0px !important;
   padding-right: 0px !important;
+  color: var(--color-memories);
 }
 
 @media (min-width: 576px) { 

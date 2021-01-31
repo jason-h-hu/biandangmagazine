@@ -1,6 +1,9 @@
 import React from 'react';
 import {Link} from 'gatsby';
 import {Navbar, Nav} from 'react-bootstrap'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+
 
 import Logotype from '../logotype';
 import styles from './styles.module.css';
@@ -13,7 +16,9 @@ export default function Header({darkMode = false}) {
         <Link className={styles.smallLogoButton} to="/"><Logotype size="small"/></Link>
         <Link className={styles.xsmallLogoButton} to="/"><Logotype size="xsmall"/></Link>
       </Navbar.Brand>
-      <Navbar.Toggle className={styles.hamburgerButton} aria-controls="basic-navbar-nav"/>
+      <Navbar.Toggle className={darkMode ? styles.hamburgerButtonDark: styles.hamburgerButton} aria-controls="basic-navbar-nav">
+        <FontAwesomeIcon className={darkMode ? styles.hamburgerButtonDark: styles.hamburgerButton}  icon={faBars}/>
+      </Navbar.Toggle>
       <Navbar.Collapse id="basic-navbar-nav" className={styles.buttons}>
         {
           [
