@@ -27,7 +27,7 @@ export default function Header({darkMode = false}) {
             {link: "/brand", text: 'The Brand'},
           ].map(({link, text}, i) => 
             <Nav.Item className={styles.button} key={i}>
-              <Link className={darkMode ? styles.linkDm : styles.link} to={link}>{text}</Link>
+              <Link className={darkMode ? styles.linkDark : styles.link} to={link}>{text}</Link>
             </Nav.Item>  
           )
         }

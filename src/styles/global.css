@@ -10,8 +10,8 @@ a {
 }
 
 a:hover {
-  text-decoration: none !important;
-  color: var(--color-101) !important;
+  text-decoration: none;
+  color: var(--color-101);
 }
 
 a:active {
