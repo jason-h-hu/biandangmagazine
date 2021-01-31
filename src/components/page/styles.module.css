@@ -3,15 +3,23 @@
 
 .container {
   background-color: var(--color-memories);
-  position: relative;
   height: 100%;
-
-  display: flex;
   min-height: 100vh;
-  flex-direction: column;
-
+  
   background-size: cover;
   background-position: center;
+}
+
+.full-height {
+  height: 100%;
+  min-height: 100vh;
+}
+
+.layout {
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .page {
@@ -19,12 +27,9 @@
   margin: auto;
   padding: 10px;
   padding-bottom: 60px;
+  flex: 1 0 auto;
 }
 
-.layout {
-  flex-grow: 1;
-}
-  
 .next-button {
   text-align: right;
 }
@@ -44,7 +49,6 @@
   font-family: var(--font-sans-serif);
   font-size: 12px;
   text-align: center;
-  text-transform: uppercase;
   
   width: calc(100% + 30px);
   margin-left: -15px;
@@ -62,6 +66,7 @@
 
 .rubber-bands {
   overflow: hidden;
+
 }
 
 .rubber-band {

@@ -32,7 +32,7 @@ export default function Page({
     <Container fluid className={styles.container} style={style}>
       <Helmet><title>{title}</title></Helmet>  
       <Header darkMode={backgroundImage != null} />
-      <Row className={styles.layout}>
+      <Row className={styles.fullHeight}>
         <Col lg={3} md={2} className={styles.rubberBands}>
           {
             rubberBandImages[0] == null ? 
@@ -54,6 +54,7 @@ export default function Page({
             home={volume} 
             darkMode={backgroundImage != null}
           />
+          <div className={styles.footer}>© 2021 Bian Dang Zine</div>
         </Col>
         <Col lg={3} md={2} className={styles.rubberBands}>
         {
@@ -69,7 +70,6 @@ export default function Page({
         }
       </Col>
     </Row>
-    <div className={styles.footer}>© 2021 Bian Dang Magazine</div>
     </Container>
   );
 }
