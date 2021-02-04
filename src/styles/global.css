@@ -1,22 +1,17 @@
 @import "../css/colors.css";
 
-html {
+html, body {
   background-color: var(--color-memories);
   height: 100%;
 }
-
-/* This is so the footers work :( */
-/* html, body, #gatsby-focus-wrapper, #___gatsby {
-  height: 100%;
-} */
 
 a {
   color: var(--color-101);
 }
 
 a:hover {
-  text-decoration: none !important;
-  color: var(--color-101) !important;
+  text-decoration: none;
+  color: var(--color-101);
 }
 
 a:active {

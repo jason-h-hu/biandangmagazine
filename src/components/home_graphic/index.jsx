@@ -2,11 +2,11 @@ import React from 'react';
 import {Link} from 'gatsby';
 import {Image, Row, Col} from 'react-bootstrap'
 
-import HomeImage from './Home@3x.png';
-import BobaImage from './Home_1@3x.png';
-import BingImage from './Home_2@3x.png';
-import BowlImage from './Home_3@3x.png';
-import BaoImage from './Home_4@3x.png';
+import HomeImage from './Home@2x.png';
+import BobaImage from './Home_1@2x.png';
+import BingImage from './Home_2@2x.png';
+import BowlImage from './Home_3@2x.png';
+import BaoImage from './Home_4@2x.png';
 import styles from './styles.module.css';
 
 export default class Home extends React.Component {
@@ -25,7 +25,7 @@ export default class Home extends React.Component {
   
   render() {
     return (
-      <div>
+      <div className={styles.wrapper}>
         <Image src={this.getBackgroundImage()} fluid/>
         <div className={styles.gridOuter}>
           {
@@ -34,8 +34,9 @@ export default class Home extends React.Component {
               {style: 'bing', title: 'Bing', url: '/bing/', img: BingImage},
               {style: 'bowl', title: 'Bowl', url: '/bowl/', img: BowlImage},
               {style: 'bao', title: 'Bao', url: '/bao/', img: BaoImage},
-            ].map(({style, title, url, img}) => 
+            ].map(({style, title, url, img}, i) => 
               <Link 
+                key={i}
                 to={url}
                 className={styles[style]} 
                 onMouseOver={() => this.onMouseOver(img)}

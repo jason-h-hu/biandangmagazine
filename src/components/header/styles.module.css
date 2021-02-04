@@ -1,71 +1,73 @@
 @import "../../css/typography.css";
 @import "../../css/colors.css";
 
-.home {
-  font-size: 24px;
-  font-family: var(--font-serif);
-  color: var(--color-good-luck);
-  padding-left: 10px;
-}
-
 .header {
-  margin-left: -15px;
-  margin-right: -15px;
+  padding: 0px;
+  margin-bottom: 50px;
 }
 
-.collapsed-button {
+@media (max-width: 768px) { 
+  .header { padding-left: 10px; padding-right: 10px; padding-top: 15px; }
+}
+@media (min-width: 768px) { 
+  .header { padding: 30px; }
+}
+
+@media (min-width: 768px) { 
+  .small-logo-button { display: none; }
+  .xsmall-logo-button { display: none; }
+}
+@media (max-width: 768px) and (min-width: 576px) { 
+  .medium-logo-button { display: none; }
+  .xsmall-logo-button { display: none; }
+}
+@media (max-width: 576px) { 
+  .medium-logo-button { display: none; }
+  .small-logo-button { display: none; }
+}
+
+.hamburger-button {
   border-width: 0px !important;
+  padding-right: 0px !important;
+}
+
+.hamburger-button-dark {
+  border-width: 0px !important;
+  padding-right: 0px !important;
+  color: var(--color-memories);
+}
+
+@media (min-width: 576px) { 
+  .buttons {  position: absolute; top: 30px;  right: 30px; }
+}
+@media (max-width: 768px) and (min-width: 576px) { 
+  .buttons {  position: absolute; top: 20px;  right: 10px; }
+}
+
+.button {
+  text-align: right;
+  padding-left: 10px;
   padding-right: 10px;
 }
 
-.collapsed-button:focus {
-  outline: none;
+@media (max-width: 576px) { 
+  .button { display: relative; padding-right: 0px; }
 }
 
-.buttons {
-  text-align: right;
+@media (min-width: 576px) { 
+  .button { display: inline; }
+  .button:last-child { padding-right: 0px; }
 }
 
-@media (max-width: 768px) {
-  .collapsed-home-button {
-    display: default;
-    padding-left: 0px;
-  }
-  .button {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  
-  .home {
-    display: none;
-  }
-
-  .buttons {
-    position: relative;
-  }
-}
-
-@media (min-width: 768px) {
-  .collapsed-home-button {
-    display: none;
-  }
-
-  .button {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .buttons {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-}
-
-.link {
-  color: var(--color-text-dark-dark);
-  font-size: 14px;
+.link, .link-dark {
   font-weight: bold;
-  text-transform: uppercase;
   font-family: var(--font-serif);
 }
+@media (max-width: 576px) { .link, .link-dark { font-size: 16px; }}
+@media (min-width: 576px) { .link, .link-dark { font-size: 18px; }}
+
+.link { color: var(--color-text-dark-dark); }
+.link-dark { color: var(--color-memories); }
+.button:nth-child(1) > .link:hover, .button:nth-child(1) > .link-dark:hover { color: var(--color-golden-carbs); }
+.button:nth-child(2) > .link:hover, .button:nth-child(2) > .link-dark:hover { color: var(--color-101); }
+.button:nth-child(3) > .link:hover, .button:nth-child(3) > .link-dark:hover { color: var(--color-good-luck); }

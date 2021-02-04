@@ -23,6 +23,11 @@
   font-family: var(--font-serif);
 }
 
+.navigation-button-dm {
+  color: var(--color-memories);
+  font-family: var(--font-serif);
+}
+
 @media (max-width: 576px) {
   .navigation-button {
     font-size: 24px;

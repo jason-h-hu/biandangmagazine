@@ -2,10 +2,17 @@ import React from 'react';
 
 import Page from '../../components/page';
 import Poem from '../../templates/poem';
+import BaoImage from './bao.jpg';
 
 export default function Bao() {
   return (
-    <Page title="Bao" nextPost='/bing' previousPost='/bowl' volume="/">
+    <Page 
+      title="Bao" 
+      nextPost='/bing' 
+      previousPost='/bowl' 
+      volume="/" 
+      backgroundImage={BaoImage}
+    >
       <Poem title="Bao" author="Carolyn Huang">
         <p>
           Nestled in a brimming platter<br/>

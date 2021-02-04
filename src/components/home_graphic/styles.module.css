@@ -1,5 +1,9 @@
 @import "../../css/colors.css";
 
+.wrapper {
+  position: relative;
+}
+
 .grid-outer {
   display: grid;
   grid-template-columns: auto;
@@ -12,22 +16,22 @@
 }
 
 .boba {
-  grid-column: 1 / 11;
+  grid-column: 1 / 10;
   grid-row: 1 / 4;
 }
 
 .bing {
-  grid-column: 11 / 28;
+  grid-column: 10 / 28;
   grid-row: 1;
 }
 
 .bowl {
-  grid-column: 11 / 28;
+  grid-column: 10 / 28;
   grid-row: 2;
 }
 
 .bao {
-  grid-column: 11 / 28;
+  grid-column: 10 / 28;
   grid-row: 3;
 }
 

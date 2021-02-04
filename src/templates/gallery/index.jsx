@@ -18,8 +18,8 @@ export default class Gallery extends React.Component{
 
   render() {
     const {title, description, author, images, photoIndex, isOpen} = this.state;
-    const prevIndex = (photoIndex + 1) % images.length;
-    const nextIndex = (photoIndex + images.length - 1) % images.length;
+    const prevIndex = (photoIndex + images.length - 1) % images.length;
+    const nextIndex = (photoIndex + 1) % images.length;
     return (
       <div>
         <div className={styles.header}>
@@ -50,7 +50,13 @@ export default class Gallery extends React.Component{
                 onClick={() => this.openModal(i)
               }>
                 <Image src={resource} alt={alt} fluid />
-                {caption == null ? null : <div className={textStyles.captionText}>{caption}</div>}
+                {
+                  caption == null 
+                    ? null 
+                    : <div className={styles.caption}>
+                        <span className={textStyles.captionText}>{caption}</span>
+                      </div>
+                }
               </button>
             )
           }

@@ -1,31 +1,62 @@
 import React from 'react';
 import {Link} from 'gatsby';
-import {Container, Col, Row} from 'react-bootstrap'
 import {Helmet} from 'react-helmet';
 
 import HomeGraphic from '../components/home_graphic';
 import HomeList from '../components/home_list';
 import Header from '../components/header';
+import Footer from '../components/footer';
 import Logotype from '../components/logotype';
 
 import styles from './styles.module.css';
 
 export default function Home() {
   return (
-    <Container fluid className={styles.container}>
+    <div className={styles.container}>
       <Helmet><title>Bian Dang</title></Helmet>
-      <div className={styles.mobileHeader}><Header/></div>
-      <Row className={styles.page}>
-        <Col lg={3} className={styles.browserHeader}>
-          <div className={styles.logotype}><Logotype size="large"/></div>
-          <div className={styles.buttons}>
-            <div className={styles.button}><Link className={styles.link} to="/about">About</Link></div>
-            <div className={styles.button}><Link className={styles.link} to="/contact">Contact</Link></div>
+      <div className={styles.body}>
+        <div className={styles.xlargeView}>
+          <div className={styles.desktopHeader}>
+            <div className={styles.logotype}><Logotype size="xlarge"/></div>
+            {renderButtons()}
           </div>
-        </Col>
-        <Col className={styles.homeGraphic} lg={9}><HomeGraphic /></Col>
-        <Col className={styles.homeList} lg={9}><HomeList /></Col>
-      </Row>
-    </Container>
+          <div className={styles.desktopHome}><HomeGraphic /></div>
+        </div>
+        <div className={styles.largeView}>
+          <div className={styles.desktopHeader}>
+            <div className={styles.logotype}><Logotype size="large"/></div>
+            {renderButtons()}
+          </div>
+          <div className={styles.desktopHome}><HomeGraphic /></div>
+        </div>
+        <div className={styles.mediumView}>
+          <div className={styles.compactHeader}><Header/></div>
+          <div className={styles.compactHome}><HomeGraphic/></div>
+        </div>
+        <div className={styles.smallView}>
+          <div className={styles.compactHeader}><Header/></div>
+          <div><HomeList /></div>
+        </div>
+      </div>
+      <Footer/>
+    </div>
+  );
+}
+
+function renderButtons () {
+  return (
+    <div className={styles.buttons}>
+      {
+        [
+          {link: "/about", text: 'About'},
+          {link: "/team", text: 'The Team'},
+          {link: "/brand", text: 'The Brand'},
+        ].map(({link, text}, i) => 
+          <div className={styles.button} key={i}>
+            <Link className={styles.link} to={link}>{text}</Link>
+          </div>
+        )
+      }
+    </div>    
   );
 }

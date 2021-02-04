@@ -3,25 +3,33 @@
 
 .container {
   background-color: var(--color-memories);
-  position: relative;
-  min-height: calc(100vh - 80px);
-  margin-bottom: -100px;
-
-  display: flex;
+  height: 100%;
   min-height: 100vh;
+  
+  background-size: cover;
+  background-position: center;
+}
+
+.full-height {
+  height: 100%;
+  min-height: 100vh;
+}
+
+.layout {
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
   flex-direction: column;
 }
 
 .page {
   max-width: 700px;
   margin: auto;
+  padding: 10px;
   padding-bottom: 60px;
+  flex: 1 0 auto;
 }
 
-.layout {
-  flex-grow: 1;
-}
-  
 .next-button {
   text-align: right;
 }
@@ -37,12 +45,10 @@
 }
 
 .footer {
-  background: var(--color-101); 
-  color: var(--color-text-light-light);
+  color: var(--color-101);
   font-family: var(--font-sans-serif);
   font-size: 12px;
   text-align: center;
-  text-transform: uppercase;
   
   width: calc(100% + 30px);
   margin-left: -15px;
@@ -50,4 +56,25 @@
   padding-bottom: 40px;
 
   flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .rubber-bands {
+    display: none;
+  }
+}
+
+.rubber-bands {
+  overflow: hidden;
+
+}
+
+.rubber-band {
+  width: 50%;
+  min-width: 400px;
+  position: absolute;
+}
+
+.hidden {
+  display: none;
 }
