@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'gatsby';
-import {Image, Row, Col} from 'react-bootstrap'
+import {Image} from 'react-bootstrap'
 
 import HomeImage from './Home@2x.png';
 import BobaImage from './Home_1@2x.png';

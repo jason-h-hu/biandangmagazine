@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'gatsby';
-import {Image, Row, Col} from 'react-bootstrap'
+import {Image} from 'react-bootstrap'
 
 import textStyles from '../../css/text.module.css';
 import styles from './styles.module.css';

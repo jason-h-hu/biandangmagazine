@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'gatsby';
-import {Row, Col, Image} from 'react-bootstrap'
+import {Row, Col} from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
