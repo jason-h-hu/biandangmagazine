@@ -71,6 +71,11 @@
 
 .link { color: var(--color-text-dark-dark); }
 .link-dark { color: var(--color-memories); }
+
 .button:nth-child(1) > .link:hover, .button:nth-child(1) > .link-dark:hover { color: var(--color-golden-carbs); }
 .button:nth-child(2) > .link:hover, .button:nth-child(2) > .link-dark:hover { color: var(--color-101); }
 .button:nth-child(3) > .link:hover, .button:nth-child(3) > .link-dark:hover { color: var(--color-good-luck); }
+
+.button:nth-child(1) > .link:active, .button:nth-child(1) > .link-dark:active { color: var(--color-golden-carbs-faded-1); }
+.button:nth-child(2) > .link:active, .button:nth-child(2) > .link-dark:active { color: var(--color-101-faded-1); }
+.button:nth-child(3) > .link:active, .button:nth-child(3) > .link-dark:active { color: var(--color-good-luck-faded-1); }

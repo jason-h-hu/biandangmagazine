@@ -16,7 +16,7 @@ export default function Page({
   volume, // url-string
   bannerPhoto, // {url, credit}
   backgroundImage, // gatsby-image
-  fullWidth, // bootstrap
+  fullWidth, // boolean
   children, // react component
 }) {
   const style = backgroundImage == null ? {} : {backgroundImage: `url("${backgroundImage}")`};
@@ -32,10 +32,10 @@ export default function Page({
         {
           fullWidth 
             ? null 
-            : <RubberBands image={rubberBandImages[0]} top={randomRange(10, 100, 'px')} right={randomRange(10, 50, '%')}/>
+            : <RubberBands image={rubberBandImages[0]} top={randomRange(10, 100, 'px')} right={randomRange(10, 25, '%')}/>
         }
-        <div className={styles.layout}>
-          <div className={fullWidth ? styles.fullPage : styles.page}>{children}</div>
+        <div className={fullWidth ? styles.fullLayout : styles.layout}>
+          <div className={styles.page}>{children}</div>
           <div className={styles.stickyFooter}>
             <NavigationButtons 
               next={nextPost} 

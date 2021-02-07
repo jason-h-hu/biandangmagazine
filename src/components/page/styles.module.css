@@ -37,18 +37,19 @@
   justify-content: center;
 }
 
-.layout {
+.layout, .full-layout {
   display: flex;
   flex-direction: column;
-  max-width: 700px;
-  width: 100%;
   flex: 1 0 auto;
   align-items: stretch;
   padding-left: 10px;
   padding-right: 10px;
+  width: 100%;
 }
+.layout { max-width: 700px; }
+.full-layout { max-width: 1400px; }
 
-.page, .full-page {
+.page {
   padding: 10px;
   padding-bottom: 120px;
   flex: 1 0 auto;

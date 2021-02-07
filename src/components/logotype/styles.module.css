@@ -1,5 +1,5 @@
 @import "../../css/colors.css";
 
-.logotype {
-  fill: var(--color-good-luck);
-}
+.logotype, .logotype-static { fill: var(--color-good-luck); }
+.logotype:hover { fill: var(--color-good-luck-faded-1); }
+.logotype:active { fill: var(--color-good-luck-faded-2); }

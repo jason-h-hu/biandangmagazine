@@ -15,24 +15,28 @@ export default function Home() {
     <div className={styles.container}>
       <Helmet><title>Bian Dang</title></Helmet>
       <div className={styles.body}>
+        
         <div className={styles.xlargeView}>
           <div className={styles.desktopHeader}>
-            <div className={styles.logotype}><Logotype size="xlarge"/></div>
+            <div className={styles.logotype}><Logotype disableHover={true} size="xlarge"/></div>
             {renderButtons()}
           </div>
           <div className={styles.desktopHome}><HomeGraphic /></div>
         </div>
+        
         <div className={styles.largeView}>
           <div className={styles.desktopHeader}>
-            <div className={styles.logotype}><Logotype size="large"/></div>
+            <div className={styles.logotype}><Logotype disableHover={true} size="large"/></div>
             {renderButtons()}
           </div>
           <div className={styles.desktopHome}><HomeGraphic /></div>
         </div>
+        
         <div className={styles.mediumView}>
           <div className={styles.compactHeader}><Header/></div>
           <div className={styles.compactHome}><HomeGraphic/></div>
         </div>
+        
         <div className={styles.smallView}>
           <div className={styles.compactHeader}><Header/></div>
           <div><HomeList /></div>

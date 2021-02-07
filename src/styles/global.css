@@ -15,9 +15,9 @@ a:hover {
 }
 
 a:active {
-  color: var(--color-101-faded-1) !important;
+  color: var(--color-101-faded-1);
 }
 
 :target {
-  background-color: var(--color-golden-carbs-faded) !important; /* pale goldenrod */
+  background-color: var(--color-golden-carbs-faded-1) !important; /* pale goldenrod */
 }

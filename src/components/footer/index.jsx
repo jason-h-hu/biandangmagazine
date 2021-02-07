@@ -2,8 +2,8 @@ import React from 'react';
 
 import styles from './styles.module.css';
 
-export default function Footer() {
+export default function Footer({darkMode=false}) {
   return (
-    <div className={styles.footer}>© 2021 Bian Dang Zine</div>
+    <div className={darkMode ? styles.footerDark : styles.footer}>© 2021 Bian Dang Zine</div>
  );
 }

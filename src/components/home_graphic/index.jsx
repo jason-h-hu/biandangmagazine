@@ -22,7 +22,7 @@ export default class Home extends React.Component {
   getBackgroundImage() {
     return this.state.backgroundImage;
   }
-  
+
   render() {
     return (
       <div className={styles.wrapper}>

@@ -21,21 +21,25 @@ export default function Profile({img, name, biography, position, social, prompt,
         <div className={styles.prompt}>{prompt}</div>
         <div className={styles.answer}>{answer}</div>
         <div className={styles.socials}>{
-          social.map(({label, value, url}, i) => 
-            <a className={styles.socialLink} href={url} key={i}>
-              <span className={styles.socialLabel}>
-                {
-                  ICON_LOOKUP[label] == null
-                    ? <FontAwesomeIcon icon={faGlobe} />
-                    : <FontAwesomeIcon icon={ICON_LOOKUP[label]} />
-                }
-              </span>
-              <span className={styles.socialValue} href={url}>{value}</span>
-            </a>
-          )
+          social.map(({label, value, url}, i) => <Social label={label} value={value} url={url} key={i}/>)
         }</div>
       </div>
       
     </div>
+  );
+}
+
+function Social({label, value, url}) {
+  return (
+    <a className={styles.socialLink} href={url} target="_blank">
+      <span className={styles.socialLabel}>
+        {
+          ICON_LOOKUP[label] == null
+            ? <FontAwesomeIcon icon={faGlobe} />
+            : <FontAwesomeIcon icon={ICON_LOOKUP[label]} />
+        }
+      </span>
+      <span className={styles.socialValue} href={url}>{value}</span>
+    </a>
   );
 }

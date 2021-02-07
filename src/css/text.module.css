@@ -63,7 +63,7 @@ a.body-text {
    * component should know how to render itself in 
    * dark/light mode */
   color: var(--color-memories); 
-  text-shadow: 1px 1px 5px black;
+  text-shadow: 2px 2px 5px black;
 }
 
 .caption-text {

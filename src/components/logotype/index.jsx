@@ -10,13 +10,13 @@ const SIZES={
   large: {width: 120, height: 120},
   xlarge: {width: 160, height: 160},
 }
-export default function Logotype({size='large'}) {
+export default function Logotype({size='large', disableHover=false}) {
   // NOTE: This was generated from './icon.svg' using the site: https://transform.tools/ 
   return size === 'xsmall' ? <Icon/> : (
     <svg 
       viewBox="0 0 600.92 530.58" 
       alt="便當 | Bian Dang"
-      className={styles.logotype} 
+      className={disableHover ? styles.logotypeStatic : styles.logotype} 
       width={SIZES[size].width}
       height={SIZES[size].height}
     >

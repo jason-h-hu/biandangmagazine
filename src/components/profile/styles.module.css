@@ -16,7 +16,7 @@
   flex-grow: 1;
 }
 .profile-name {
-  font-size: 24px;
+  font-size: 32px;
   font-family: var(--font-serif);
   padding-top: 10px;
   /* padding-bottom: 10px; */
@@ -26,14 +26,13 @@
   font-family: var(--font-sans-serif);
   font-size: 18px;
   line-height: 18px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .prompt {
   font-family: var(--font-sans-serif);
+  color: var(--color-101);
   font-size: 18px;
-  line-height: 18px;
-  font-weight: bold;
   padding-bottom: 10px;
 }
 
@@ -41,10 +40,7 @@
   font-family: var(--font-sans-serif);
   font-size: 18px;
   line-height: 18px;
-}
-
-.socials {
-  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 .social-link {
@@ -54,6 +50,10 @@
   font-weight: bold;
   width: 100%;
   display: inline-block;
+}
+
+.social-link:hover {
+  color: var(--color-101-faded-1);
 }
 
 .social-label {
