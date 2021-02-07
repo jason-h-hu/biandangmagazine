@@ -1,16 +1,19 @@
 @import "../../css/typography.css";
 @import "../../css/colors.css";
 
-.header {
+.header, .header-dark {
   padding: 0px;
   margin-bottom: 50px;
 }
 
+.header { background-color: var(--color-memories);}
+.header-dark {   text-shadow: 1px 1px 5px black;}
+
 @media (max-width: 768px) { 
-  .header { padding-left: 10px; padding-right: 10px; padding-top: 15px; }
+  .header, .header-dark { padding-left: 10px; padding-right: 10px; padding-top: 15px; }
 }
 @media (min-width: 768px) { 
-  .header { padding: 30px; }
+  .header, .header-dark { padding: 30px; }
 }
 
 @media (min-width: 768px) { 

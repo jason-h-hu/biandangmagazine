@@ -72,6 +72,9 @@ a.body-text {
   line-height: 14pt;
   color: var(--color-text-dark-medium);
 }
+@media (max-width: 576px) { .caption-text { font-size: 10pt; }}
+@media (min-width: 576px) { .caption-text { font-size: 11pt; }}
+@media (min-width: 768px) { .caption-text { font-size: 12pt; }}
 
 .label-text {
   font-family: var(--font-sans-serif);

@@ -1,72 +1,68 @@
 @import '../../css/colors.css';
 @import '../../css/typography.css';
 
+.floating-header {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.banner-photo {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.banner-caption {
+  text-align: right;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
 .container {
   background-color: var(--color-memories);
-  height: 100%;
   min-height: 100vh;
-  
+  display: flex;
+  flex-flow: column nowrap;
   background-size: cover;
   background-position: center;
 }
 
-.full-height {
-  height: 100%;
-  min-height: 100vh;
+.viewport {
+  flex-direction: row;
+  flex: 1 0 auto;
+  display: flex;
+  align-items: stretch;
 }
 
 .layout {
-  height: 100%;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  max-width: 700px;
+  width: 100%;
+  flex: 1 0 auto;
+  align-items: stretch;
 }
 
 .page {
-  max-width: 700px;
-  margin: auto;
   padding: 10px;
   padding-bottom: 60px;
   flex: 1 0 auto;
 }
 
-.next-button {
-  text-align: right;
-}
-
-.previous-button {
-  text-align: left;
-}
-
-.navigation-buttons {
-  padding: 40px;
-  padding-top: 20px;
-  padding-bottom: 30px;
-}
-
-.footer {
-  color: var(--color-101);
-  font-family: var(--font-sans-serif);
-  font-size: 12px;
-  text-align: center;
-  
-  width: calc(100% + 30px);
-  margin-left: -15px;
-  padding-top: 20px;
-  padding-bottom: 40px;
-
+.sticky-footer {
   flex-shrink: 0;
 }
 
 @media (max-width: 768px) {
-  .rubber-bands {
-    display: none;
-  }
+  .rubber-bands { display: none; }
 }
 
 .rubber-bands {
+  position: relative;
   overflow: hidden;
-
+  flex: 1 0 auto;
 }
 
 .rubber-band {

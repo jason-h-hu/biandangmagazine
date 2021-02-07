@@ -10,7 +10,7 @@ import styles from './styles.module.css';
 
 export default function Header({darkMode = false}) {
   return (
-    <Navbar expand="sm" className={styles.header} > 
+    <Navbar expand="sm" className={darkMode ? styles.headerDark : styles.header} > 
       <Navbar.Brand className={styles.home}>
         <Link className={styles.mediumLogoButton} to="/"><Logotype size="medium"/></Link>
         <Link className={styles.smallLogoButton} to="/"><Logotype size="small"/></Link>

@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from 'gatsby';
-import {Row, Col} from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
@@ -10,8 +9,8 @@ import styles from './styles.module.css';
 export default function NavigationButtons({next, previous, home, darkMode}) {
   const linkClass =  darkMode ? styles.navigationButtonDm : styles.navigationButton;
   return (
-    <Row className={styles.navigationButtons}>
-      <Col xs="4" className={styles.previousButton}>
+    <div className={styles.navigationButtons}>
+      <div className={styles.previousButton}>
         {
           previous == null 
             ? null 
@@ -20,15 +19,15 @@ export default function NavigationButtons({next, previous, home, darkMode}) {
                 <span className={styles.mobileText}><FontAwesomeIcon icon={faArrowLeft}/></span>
               </Link>
         }
-      </Col>
-      <Col xs="4" className={styles.homeButton}>
+      </div>
+      <div className={styles.homeButton}>
         {
           home == null 
             ? null
             : <Link className={linkClass} to={home}><Icon alt="Home"/></Link>
         }
-      </Col>
-      <Col xs="4" className={styles.nextButton}>
+      </div>
+      <div className={styles.nextButton}>
         {
           next == null 
             ? null 
@@ -37,7 +36,7 @@ export default function NavigationButtons({next, previous, home, darkMode}) {
                 <span className={styles.mobileText}><FontAwesomeIcon icon={faArrowRight}/></span>
               </Link>
         }
-      </Col>
-    </Row>
+      </div>
+    </div>
   );
 }

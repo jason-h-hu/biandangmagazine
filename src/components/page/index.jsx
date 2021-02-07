@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image, Container, Row, Col} from 'react-bootstrap'
+import {Image} from 'react-bootstrap'
 import {Helmet} from 'react-helmet';
 
 import Header from '../header';
@@ -7,6 +7,7 @@ import Footer from '../footer';
 import NavigationButtons from '../navigation_buttons';
 import styles from './styles.module.css';
 
+import textStyles from '../../css/text.module.css';
 import getRandomBands from './rubber_bands';
 
 export default function Page({
@@ -14,6 +15,7 @@ export default function Page({
   nextPost, // url-string
   previousPost, // url-string
   volume, // url-string
+  bannerPhoto, // {url, credit}
   backgroundImage, // gatsby-image
   fullWidth, // bootstrap
   children, // react component
@@ -21,11 +23,23 @@ export default function Page({
   const style = backgroundImage == null ? {} : {backgroundImage: `url("${backgroundImage}")`};
   const rubberBandImages = backgroundImage == null ? getRandomBands(2) : []; 
   return (
-    <Container fluid className={styles.container} style={style}>
+    <div className={styles.container} style={style}>
       <Helmet><title>{title}</title></Helmet>  
-      <Header darkMode={backgroundImage != null} />
-      <Row className={styles.fullHeight}>
-        <Col lg={3} md={2} className={fullWidth ? styles.hidden : styles.rubberBands}>
+      {
+        bannerPhoto == null
+          ? null
+          : <div className={styles.bannerPhoto}>
+              <Image src={bannerPhoto.url} fluid/>
+              <div className={styles.bannerCaption}>
+                <div className={textStyles.captionText}>Photo by {bannerPhoto.credit}</div>
+              </div>
+            </div>
+      }
+      <div className={bannerPhoto != null ? styles.floatingHeader : null}>
+        <Header darkMode={backgroundImage != null || bannerPhoto != null} />
+      </div>
+      <div className={styles.viewport}>
+        <div className={fullWidth ? styles.hidden : styles.rubberBands}>
           {
             rubberBandImages[0] == null ? 
               null : 
@@ -37,18 +51,20 @@ export default function Page({
                 <Image src={rubberBandImages[0]} fluid />
               </div>
           }
-        </Col>
-        <Col className={styles.layout} lg={fullWidth ? 12 : 6} md={fullWidth ? 12 : 8}>
+        </div>
+        <div className={styles.layout}>
           <div className={fullWidth ? styles.fullPage : styles.page}>{children}</div>
-          <NavigationButtons 
-            next={nextPost} 
-            previous={previousPost} 
-            home={volume} 
-            darkMode={backgroundImage != null}
-          />
-          <Footer/>
-        </Col>
-        <Col lg={3} md={2} className={fullWidth ? styles.hidden : styles.rubberBands}>
+          <div className={styles.stickyFooter}>
+            <NavigationButtons 
+              next={nextPost} 
+              previous={previousPost} 
+              home={volume} 
+              darkMode={backgroundImage != null}
+            />
+            <Footer/>
+          </div>
+        </div>
+        <div className={fullWidth ? styles.hidden : styles.rubberBands}>
         {
           rubberBandImages[1] == null ? 
             null : 
@@ -60,9 +76,9 @@ export default function Page({
               <Image src={rubberBandImages[1]} fluid />
             </div>
           }
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </div>
+    </div>
   );
 }
 

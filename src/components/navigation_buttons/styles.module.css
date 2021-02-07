@@ -1,21 +1,20 @@
 @import "../../css/typography.css";
 @import "../../css/colors.css";
 
-.next-button {
-  text-align: right;
+.next-button, .home-button, .previous-button {
+  width: 200px;
 }
 
-.home-button {
-  text-align: center;
-}
-
-.previous-button {
-  text-align: left;
-}
+.next-button { text-align: right; }
+.home-button { text-align: center; }
+.previous-button { text-align: left; }
 
 .navigation-buttons {
   padding-top: 20px;
   padding-bottom: 30px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between
 }
 
 .navigation-button {
@@ -29,23 +28,13 @@
 }
 
 @media (max-width: 576px) {
-  .navigation-button {
-    font-size: 24px;
-  }
-  .desktop-text {
-    display: none;
-  }
+  .navigation-button { font-size: 24px; }
+  .desktop-text { display: none; }
 }
 @media (min-width: 576px) {
-  .navigation-button {
-    font-size: 16px;
-  }
-  .mobile-text {
-    display: none;
-  }
+  .navigation-button { font-size: 16px; }
+  .mobile-text { display: none; }
 }
 @media (min-width: 768px) {
-  .navigation-button {
-    font-size: 18px;
-  }
+  .navigation-button { font-size: 18px; }
 }

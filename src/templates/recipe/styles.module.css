@@ -2,12 +2,18 @@
   padding-bottom: 40px;
 }
 
+.banner-photo {
+  padding-bottom: 40px;
+  width: calc(100% + 150px);
+  margin-left: -75px;
+}
+
 .attributes {
   padding-bottom: 20px;
   padding-top: 10px;
 }
 
-.ingredients {
+.ingredients, .equipment {
   padding-bottom: 20px;
 }
 
