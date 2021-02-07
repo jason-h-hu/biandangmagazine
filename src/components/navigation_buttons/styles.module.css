@@ -12,6 +12,8 @@
 .navigation-buttons {
   padding-top: 20px;
   padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between

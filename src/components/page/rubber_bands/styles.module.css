@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+  .rubber-bands { display: none; }
+}
+
+.rubber-bands {
+  position: relative;
+  overflow: hidden;
+  flex: 1 0 auto;
+}
+
+.rubber-band {
+  width: 50%;
+  min-width: 400px;
+  position: absolute;
+}
