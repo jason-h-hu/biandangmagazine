@@ -2,11 +2,9 @@
   padding-bottom: 40px;
 }
 
-.banner-photo {
-  padding-bottom: 40px;
-  width: calc(100% + 150px);
-  margin-left: -75px;
-}
+.banner-photo { padding-bottom: 40px; }
+@media (min-width: 576px) { .banner-photo { width: calc(100% + 150px); margin-left: -75px; }}
+@media (max-width: 576px) { .banner-photo { width: calc(100% + 40px); margin-left: -20px; }}
 
 .attributes {
   padding-bottom: 20px;
