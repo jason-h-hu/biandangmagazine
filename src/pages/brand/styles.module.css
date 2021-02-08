@@ -1,3 +1,13 @@
-.header {
-  padding-bottom: 40px;
+.header, .mobile-header { padding-bottom: 40px; }
+.mobile-view { display: none; }
+.desktop-view { display: inherit; }
+
+@media (pointer:none), (pointer:coarse) {
+  .mobile-view { display: inherit; }
+  .desktop-view { display: none; }
+}
+
+.mobile-view {
+  max-width: 700px;
+  margin: auto;
 }
