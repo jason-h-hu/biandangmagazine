@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Page from '../../components/page';
+import Button from '../../components/button';
 import textStyles from '../../css/text.module.css';
 import styles from './styles.module.css';
 import brandPdf from './bian-dang-brand-book.pdf';
@@ -14,8 +15,8 @@ export default function Brand() {
   return (
     <Page title="The Brand" fullWidth={true}>
       <div className={styles.mobileView}>
-        <div className={styles.mobileHeader}><div className={textStyles.headerLg}>We wanted to document our color and design choices.</div></div>
-        <div className={styles.mobileHeader}><div className={textStyles.headerLg}><a href={brandPdf}>You can see that here.</a></div></div>
+        <div className={styles.mobileHeader}><div className={textStyles.headerLg}>We wanted to document our design process.</div></div>
+        <Button size="lg" href={brandPdf}>Check it out</Button>
       </div>
       <div className={styles.desktopView}>
         <object data={brandPdf} type="application/pdf" width="100%" height="800px">
