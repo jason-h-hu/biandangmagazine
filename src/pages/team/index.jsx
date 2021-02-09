@@ -42,7 +42,7 @@ const PROFILE_DATA = [
     name: 'Jessica Lin', 
     position: "Brand Designer",
     prompt: 'Most underrated Taiwanese dish?',
-    answer: '炒米粉 (chao mifen) - Taiwanese pan-fried rice noodles',
+    answer: <p>炒米粉 (<em>chao mifen</em>) - Taiwanese pan-fried rice noodles</p>,
     biography: 'As a Taiwanese-American who grew up in Singapore, I often find myself seeking a sense of belonging and home. It always feels like something in my life is missing - maybe because the things I love are spread across the globe; my family’s in Taiwan, my memories are in Singapore, and my core is in San francisco. Food is a comforting remedy, whether that means sweating over a pot of homemade laksa or going on a quick (daily) boba run. 便當 is a way for me to share and connect with my stories.',
     social: [
       {label: 'Portfolio', value: 'linjessica.com', url: 'http://www.linjessica.com/'},

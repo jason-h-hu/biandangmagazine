@@ -18,7 +18,7 @@ export default function Bao() {
           Nestled in a brimming platter<br/>
           Swaddled in curling steam<br/>
           A tumble of 生煎包<br/>
-          cradle a family dream<br/>
+          Cradle a family dream<br/>
         </p>
         <p>
           Once a carrying mother’s craving <br/>

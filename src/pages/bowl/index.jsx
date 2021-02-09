@@ -9,7 +9,7 @@ export default function Ceramics() {
     <Page title='Bowl' nextPost='/bao' previousPost='/boba' volume="/">
       <Gallery 
         title='Bowl' 
-        description='The overlap of my identity as a Taiwanese American, an illustrator, an amateur ceramicist, and someone who loves to eat. 😋'
+        description='The overlap of my identity as a Taiwanese American, an illustrator, an amateur ceramicist, and someone who loves to eat 😋'
         author='Jane Li'
         images={[{resource: ceramicsImage, alt: ''}]}
       />
