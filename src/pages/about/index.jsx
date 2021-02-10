@@ -15,6 +15,19 @@ export default function About() {
           <p>開飯</p>
         </div>
       </div>
+      <div className={styles.section}>
+        <div className={styles.subscriptionHeader}>Stay Updated!</div>
+        <div className={styles.subscriptionPrompt}>This was meant as a single serving, but give us your email if you’d be interested in seconds:</div>
+        <div id="mc_embed_signup">
+          <form action="https://gmail.us1.list-manage.com/subscribe/post?u=08e6b0a815dd768c64816ed98&amp;id=dc38d2cb5d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" noValidate>
+            <div id="mc_embed_signup_scroll">
+              <input type="email" className={styles.emailInput} defaultValue="" name="EMAIL" id="mce-EMAIL" placeholder="email address" required />
+              <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true"><input type="text" name="b_08e6b0a815dd768c64816ed98_dc38d2cb5d" tabIndex="-1" defaultValue=""/></div>
+              <input className={styles.emailSubmit} type="submit" defaultValue="Subscribe" name="subscribe" id="mc-embedded-subscribe" />
+            </div>
+          </form>
+        </div>
+      </div>
     </Page>
   );
 }
