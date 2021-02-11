@@ -17,7 +17,9 @@ export default function About() {
       </div>
       <div className={styles.section}>
         <div className={styles.subscriptionHeader}>Stay Updated!</div>
-        <div className={styles.subscriptionPrompt}>This was meant as a single serving, but give us your email if you’d be interested in seconds:</div>
+        <div className={styles.subscriptionPrompt}>
+          <span className={textStyles.bodyText}>This was meant as a single serving, but give us your email if you’d be interested in seconds:</span>
+        </div>
         <div id="mc_embed_signup">
           <form action="https://gmail.us1.list-manage.com/subscribe/post?u=08e6b0a815dd768c64816ed98&amp;id=dc38d2cb5d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" noValidate>
             <div id="mc_embed_signup_scroll">
