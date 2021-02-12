@@ -97,7 +97,7 @@ export default function Bing() {
                 note: 'Lard and other animal fats will taste better if you’ve got them, and you can use vegetable oil, in a pinch.'
               },
               {quantity: '1', unit: 'tbsp', name: 'black pepper', modifier: 'ground'},
-              {quantity: '⅓', unit: 'cup', name: 'sesame seeds'},
+              {quantity: '1/3', unit: 'cup', name: 'sesame seeds'},
               {quantity: '1', unit: 'tsp', name: 'simple syrup'},              
             ],
             note: "All of the fillings are a rough ballpark. You can scale up or down to taste.",
