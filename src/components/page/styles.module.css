@@ -7,11 +7,15 @@
   width: 100%;
 }
 
-.banner-photo {
+.banner {
   position: relative;
   top: 0px;
   width: 100%;
   padding-bottom: 20px;
+}
+
+.banner-photo {
+  width: 100%;
 }
 
 .banner-caption {

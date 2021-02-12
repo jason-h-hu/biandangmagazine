@@ -66,8 +66,8 @@ function BannerPhoto ({bannerPhoto}) {
   if (bannerPhoto == null) return null;
   const {url, credit} = bannerPhoto;
   return (
-    <div className={styles.bannerPhoto}>
-      <Image src={url} fluid/>
+    <div className={styles.banner}>
+      <Image src={url} fluid className={styles.bannerPhoto}/>
       <div className={styles.bannerCaption}>
         <div className={textStyles.captionText}>Photo by {credit}</div>
       </div>
