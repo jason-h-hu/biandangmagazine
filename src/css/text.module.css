@@ -94,3 +94,7 @@ a.body-text {
   font-size: 12pt;
   color: var(--color-text-dark-medium);
 }
+
+.footnote-text:target {
+  background-color: var(--color-golden-carbs-faded-1) !important; /* pale goldenrod */
+}
